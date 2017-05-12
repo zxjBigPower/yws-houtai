@@ -11,6 +11,14 @@
 |
 */
 
-Route::get('/', function () {
+/*Route::get('/', function () {
     return view('welcome');
+});*/
+
+//Home
+Route::group(['middleware' => ['web'],'namespace'=>'Home'], function () {
+    //官网首页
+    Route::get('/','HomeController@home');
+    //登录
+    Route::any('login','HomeController@login');
 });
