@@ -59,7 +59,7 @@
 <!--最简单的样式 -->
 <div class="header clearfix">
     <div class="w">
-        <div class="yws-logo fl"><a href="{{url('#')}}"><img src="{{asset('home/img/logo.png')}}" alt="" height="80px"></a></div>
+        <div class="yws-logo fl"><a href="{{url('/')}}"><img src="{{asset('home/img/logo.png')}}" alt="" height="80px"></a></div>
         <ul id="nav-ul">
             <li><a href="{{url('/')}}" class="hover">首页</a></li>
             <li><a href="{{url('')}}#">爆款定制</a></li>
@@ -138,10 +138,6 @@
             <li class = "poster-item"><img src="{{asset('home/img/a1.png')}}" width = "100%" height="100%"></li>
             <li class = "poster-item"><img src="{{asset('home/img/a2.png')}}" width = "100%" height="100%"></li>
             <li class = "poster-item"><img src="{{asset('home/img/a3.png')}}" width = "100%" height="100%"></li>
-            <!--<li class = "poster-item"><img src="img/a4.png" width = "100%" height="100%"></li>
-            <li class = "poster-item"><img src="img/a5.png" width = "100%" height="100%"></li>
-            <li class = "poster-item"><img src="img/a6.png"  width = "100%" height="100%"></li>
-           <li class = "poster-item"><img src="img/a7.png"  width = "100%" height="100%"></li>-->
         </ul>
         <div class = "poster-btn poster-prev-btn"></div>
         <div class = "poster-btn poster-next-btn"></div>

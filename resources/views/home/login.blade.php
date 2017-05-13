@@ -24,7 +24,7 @@
             <a href="{{url('/')}}"><img src="{{asset('home/img/logo.png')}}" alt="" height="80px"></a>
         </div>
         <p class="fl">欢迎登录</p>
-        <div class="yws-login fr"><span>没有账号？</span><a href="#">请注册</a></div>
+        <div class="yws-login fr"><span>没有账号？</span><a href="{{url('register')}}">请注册</a></div>
     </div>
 </div>
 <!--导航栏 end-->
@@ -57,7 +57,7 @@
 
             <div id="zhuce">
                 <a href="#">微信</a><a href="#">QQ</a><a href="#" class="border-none">微博</a>
-                <p class="fr"><a href="#"><i class="iconfont icon-guanbi01"></i>立即注册</a></p>
+                <p class="fr"><a href="{{url('register')}}"><i class="iconfont icon-guanbi01"></i>立即注册</a></p>
             </div>
         </form>
     </div>
