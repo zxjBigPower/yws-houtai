@@ -70,7 +70,7 @@
             <li><a href="{{url('')}}#">关于我们</a></li>
         </ul>
         <ol>
-            <li><a href="{{url('#')}}" class="yws-header-zc">免费注册</a></li>
+            <li><a href="{{url('register')}}" class="yws-header-zc">免费注册</a></li>
             <li><a href="{{url('login')}}">登录</a></li>
         </ol>
     </div>

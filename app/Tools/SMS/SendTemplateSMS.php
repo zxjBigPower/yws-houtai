@@ -13,7 +13,9 @@ namespace App\index_tool\SMS;
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-use App\index_model\user_model\RTResule;
+
+
+use App\ajaxModel;
 
 class SendTemplateSMS
 {
@@ -48,7 +50,7 @@ class SendTemplateSMS
      */
     function sendMsm($to,$datas,$tempId)
     {
-        $r_result = new RTResule();
+        $r_result = new ajaxModel();
         // 初始化REST SDK
         $rest = new CCPRestSmsSDK($this->serverIP,$this->serverPort,$this->softVersion);
         $rest->setAccount($this->accountSid,$this->accountToken);
