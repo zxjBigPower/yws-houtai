@@ -1,0 +1,67 @@
+html{
+    font-size: 40px;
+    min-width: 320px;
+    max-width: 640px;
+    margin:0 auto;
+    /*background: #fff;*/
+}
+
+body{
+    padding-bottom: 1.1rem;
+    padding-top:0.1px;
+    background: #f2f2f2;
+}
+.header{
+    height: 1.1rem;
+    width: 8rem;
+    background: #fff;
+    position: fixed;
+    border-bottom: 1px solid #d8d8d8;
+    top:0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+
+}
+.back{
+    width: 0.7rem;
+    height: 0.7rem;
+    background: url(../images/icon/right.png)no-repeat 0 0;
+    background-size: cover;
+    float: left;
+    line-height: 1.1rem;
+    position: absolute;
+    left: 0.4rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.header h2{
+    text-align: center;
+    font-size: 0.4rem;
+    line-height: 1.1rem;
+
+}
+.more{
+    width: 0.7rem;
+    height: 0.7rem;
+    background: url(../images/icon/more.png)no-repeat 0 0;
+    background-size: cover;
+    float: left;
+    line-height: 1.1rem;
+    position: absolute;
+    right: 0.4rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+/*顶部结束*/
+input.lei {-webkit-appearance:none; /*去除input默认样式*/float: left;}
+
+.notifed{
+    color:red
+}
+.select.bl {
+    border: 1px #ab9a9a solid;
+    width: 90px;
+    height: 30px;
+}
+.clear{  clear: both;}

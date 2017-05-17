@@ -78,3 +78,48 @@ response body = <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
     </TemplateSMS>
 </Response>
 
+request body = <TemplateSMS>
+                    <to>13264706948</to> 
+                    <appId>8aaf07085967549b015968100a0f0178</appId>
+                    <templateId>1</templateId>
+                    <datas><data>111211</data><data>5</data></datas>
+                  </TemplateSMS>
+request url = https://app.cloopen.com:8883/2013-12-26/Accounts/8a216da8594f29f80159637e782105ea/SMS/TemplateSMS?sig=7EC873D3409C6A8F729D67417E20E777
+response body = <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Response>
+    <statusCode>000000</statusCode>
+    <TemplateSMS>
+        <smsMessageSid>21e4185d29944ed28e32220e5bf86b31</smsMessageSid>
+        <dateCreated>20170515111808</dateCreated>
+    </TemplateSMS>
+</Response>
+
+request body = <TemplateSMS>
+                    <to>13264706948</to> 
+                    <appId>8aaf07085967549b015968100a0f0178</appId>
+                    <templateId>1</templateId>
+                    <datas><data>212221</data><data>5</data></datas>
+                  </TemplateSMS>
+request url = https://app.cloopen.com:8883/2013-12-26/Accounts/8a216da8594f29f80159637e782105ea/SMS/TemplateSMS?sig=EB143371E8F63EA498ADF937CCD5D56C
+response body = <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Response>
+    <statusCode>000000</statusCode>
+    <TemplateSMS>
+        <smsMessageSid>b670875aa0ae4abdb66a4cdedf303b3e</smsMessageSid>
+        <dateCreated>20170515112133</dateCreated>
+    </TemplateSMS>
+</Response>
+
+request body = <TemplateSMS>
+                    <to>13264706948</to> 
+                    <appId>8aaf07085967549b015968100a0f0178</appId>
+                    <templateId>1</templateId>
+                    <datas><data>121211</data><data>5</data></datas>
+                  </TemplateSMS>
+request url = https://app.cloopen.com:8883/2013-12-26/Accounts/8a216da8594f29f80159637e782105ea/SMS/TemplateSMS?sig=511324AF073CC6D1C560F7F97530BA8F
+response body = <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Response>
+    <statusCode>160038</statusCode>
+    <statusMsg>短信验证码发送过频繁</statusMsg>
+</Response>
+

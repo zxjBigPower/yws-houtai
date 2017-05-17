@@ -1,0 +1,77 @@
+/*记录开始*/
+.jilu{
+    margin-top: 1.12rem;
+}
+.jilu .jiluone{
+    border-bottom: 1px solid #acacac;
+    line-height: 0.8rem;
+    font-size: 0.3rem;
+    overflow: hidden;
+}
+.jilu .jiluone li{
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+.jilu .jiluone li.cu{
+    border-bottom: 2px solid #ff7600;
+    color: #ff7600;
+}
+.jilu .dingdan{
+    margin-top: 0.44rem;
+}
+.jilu .dingdan li{
+    display: none;
+}
+.jilu .dingdan li .dan{
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+    background: #fff;
+    line-height: 1rem;
+    height: 1rem;
+    margin-top: 0.1rem;
+}
+.jilu .dingdan li .dan a{
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+.jilu .dingdan li .dan .ding{
+    float: left;
+    font-size: 0.3rem;
+    margin-left: 0.5rem;
+    color: #a9a9a9;
+}
+
+.jilu .dingdan li .dan .qi{
+    float: right;
+}
+.jilu .dingdan li .dan .qian{
+    float: left;
+    font-size: 0.3rem;
+
+}
+.jilu .dingdan li .dan .qian a{
+    color: #000;
+}
+.jilu .dingdan li .dan i{
+    width: 0.7rem;
+    height: 0.7rem;
+    display:inline-block;
+    background: url(../images/icon/yibu.png)no-repeat 0 0;
+    background-size: cover;
+    float: right;
+    margin-top: 0.15rem;
+}
+.jilu .dingdan li .heji{
+    margin-top: 1rem;
+}
+.jilu .dingdan li .heji b{
+    width: 0.7rem;
+    height: 0.7rem;
+    display:inline-block;
+    background-size: cover;
+    float: right;
+    margin-top: 0.15rem;
+}
+/*记录结束*/

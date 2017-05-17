@@ -1,0 +1,127 @@
+/*标的物开始*/
+.biaodiwu{
+    padding:0 0.45rem;
+    width: 7.1rem;
+    background: #fff;
+    margin-top: 1.11rem;
+    padding-bottom: 0.35rem;
+}
+.biaodiwu .biao{
+    border-bottom: 1px solid  #e6e6e6;
+    height:1.35rem;
+    padding-top: 0.4rem;
+   
+
+
+}
+.biaodiwu .biao h3{
+    font-size: 0.35rem;
+    color: #000;
+    font-weight: normal;
+    line-height: .5rem;
+}
+.biaodiwu .biao h3 b{
+    color: #5bacf3;
+    font-weight: normal;
+    font-size: 0.38rem;
+
+}
+.biaodiwu .biao strong{
+      color: #ed2d08;
+    font-size: 0.4rem;
+}
+.biaodiwu .shuoming{
+    font-size: 0.3rem;
+    text-indent: -1rem;
+    margin-left: 1rem;
+    color: #535353;
+    line-height: 0.45rem;
+    margin-top: 0.25rem;
+    margin-bottom: 0.575rem;
+}
+.biaodiwu .shuoming span{
+    color: #000;
+}
+.biaodiwu .zhuyi{
+    font-size: 0.3rem;
+}
+.biaodiwu .zhuyi a{
+    text-decoration: underline;
+   color:#5bacf3;
+    line-height: 0.45rem;
+
+}
+/*标的物结束*/
+
+
+/*确认身份开始*/
+.shenfen{
+    margin-top: 0.175rem;
+    background: #fff;
+    padding-left: 0.35rem;
+    padding-right: 0.35rem;
+    width: 7.3rem;
+    padding-bottom: 0.55rem;
+}
+.shenfen h3{
+    font-size: 0.35rem;
+    line-height: 0.675rem;
+}
+.shenfen p{
+    font-size: 0.3rem;
+    line-height: 0.56rem;
+    color:#aaaaaa;
+}
+.shenfen .jingpairen{
+    font-size: 0.3rem;
+    margin-left: 0.4rem;
+
+}
+.shenfen .jingpairen  .xm{
+    position: relative;
+    margin-top: .8rem;
+}
+.shenfen .jingpairen  .xm b{
+    float: left;
+    font-size: .6rem;
+    color: #ed2d08;
+    font-weight: normal;
+    margin-right: 3px;
+    position: absolute;
+    top:0.2rem;
+    left: 0;
+
+}
+.shenfen .jingpairen  .xm label{
+    color: #626262;
+    font-size: .35rem;
+    line-height: 1rem;
+    margin-left: 0.4rem;
+}
+.shenfen .jingpairen  .xm em{
+    font-size: .35rem;
+    line-height: 1rem;
+    
+    font-weight: 600;
+}
+.shenfen .jingpairen .xm span{
+    color: #aaaaaa;
+    line-height: 0.5rem;
+    margin-left: 0.4rem;
+    display: block;
+}
+/*确认身份结束*/
+
+
+
+button{
+    width:8rem;
+    line-height: 1.25rem;
+    color: #fff;
+    font-size: .35rem;
+    background: #9ec317;
+    position: fixed;
+    bottom:0;
+    left: 50%;
+    transform: translateX(-50%);
+}

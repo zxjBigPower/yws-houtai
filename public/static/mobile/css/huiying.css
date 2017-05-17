@@ -1,0 +1,106 @@
+/*页头开始*/
+html{
+    font-size: 40px;
+    min-width: 320px;
+    max-width: 640px;
+    margin:0 auto;
+}
+body{
+    background: #f2f2f2;
+    padding-bottom: 0;
+
+}
+/*页头结束*/
+
+
+/*回应开始*/
+.huiying{
+    margin-top: 1.545rem;
+}
+.huiying .one{
+    background: #fff;
+}
+.huiying .biaoti{
+    height: 1rem;
+    background: #fff;
+    font-size: 0.3rem;
+    text-align: center;
+    line-height: 1rem;
+    position: relative;
+    border-top: 1px solid #dcdcdc;
+    border-bottom: 1px solid #dcdcdc;
+}
+.huiying .biaoti i{
+    position: absolute;
+    top:0.08rem;
+    left: 4.5rem;
+    font-size: 0.4rem;
+
+}
+.open{
+
+}
+.huiying .biaoti b{
+    width: 0.1rem;
+    height: 0.1rem;
+    background: #ed2d08;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top:0.3rem;
+    left: 4.35rem;
+
+}
+.huiying .jianju{
+    padding-bottom: 0.6rem;
+
+}
+.huiying .tupian{
+    padding: 0.25rem;
+    padding-right: 0;
+    background: #fff;
+
+}
+.huiying .tupian .all{
+    overflow: hidden;
+    margin-top: 0.1rem;
+}
+.huiying .tupian .all img{
+    width: 0.75rem;
+    height: 0.75rem;
+    float: left;
+    margin-right: 0.2rem;
+}
+.huiying .tupian .all .ming{
+    float: left;
+}
+.huiying .tupian .all .ming h3{
+    font-size: 0.3rem;
+}
+.tupian .all  p{
+    font-size: 0.2rem;
+}
+.tupian .show{
+    margin-top: 0.125rem;
+}
+.tupian .show {
+    overflow: hidden;
+}
+.tupian .show li{
+    float: left;
+    margin-right: 0.2rem;
+}
+.tupian .show img{
+    width: 2.35rem;
+    height: 2.1rem;
+}
+.tupian p{
+    line-height: 1rem;
+    font-size: 0.2rem;
+
+}
+.tupian p.come{
+    border-bottom: 1px solid #dcdcdc;
+
+}
+/*回应结束*/

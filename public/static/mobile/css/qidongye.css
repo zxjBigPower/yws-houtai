@@ -1,0 +1,58 @@
+/*启动页开始*/
+html{
+    font-size: 40px;
+    min-width: 320px;
+    max-width: 640px;
+    margin:0 auto;
+    background: #fff;
+}
+body{
+    background: #f2f2f2
+}
+.qidongye{
+    width: 8rem;
+}
+.qidongye i{
+    width: 4.475rem;
+    height: 4.35rem;
+    background: url(../images/icon/qidongye.png)no-repeat 0 0;
+    background-size: cover;
+    position: fixed;
+    top:2.75rem;
+    left: 50%;
+    transform:translateX(-50%);
+}
+.qidongye .xinxi{
+    height: 2.75rem;
+    position: fixed;
+        left: 50%;
+    transform:translateX(-50%);
+    bottom:0;
+    width: 8rem;
+}
+.qidongye .xinxi h5{
+    color: #9ec317;
+    font-size: 0.4rem;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1rem;
+}
+.qidongye .xinxi a{
+    width: 2.35rem;
+    height: 0.6rem;
+    font-size: 0.3rem;
+    color: #9ec317;
+    border-radius: 0.1rem;
+    display:block;
+    margin:0 auto;
+    border:1px solid #9ec317;
+    text-align: center;
+    line-height: 0.6rem;
+}
+.qidongye .xinxi p{
+    font-size: 0.3rem;
+    text-align: center;
+    line-height: 1.15rem;
+    color: #595a59;
+}
+/*启动页结束*/

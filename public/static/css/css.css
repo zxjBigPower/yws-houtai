@@ -1,0 +1,27 @@
+.btn-list .btnlist{
+    position: absolute;
+    right: 10px;
+}
+.label.radius {
+    border-radius: 3px;
+}
+.badge, .label {
+    display: inline-block;
+    padding: 2px 4px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #fff;
+    white-space: nowrap;
+    vertical-align: middle;
+    background-color: #999;
+    overflow: hidden;
+}
+.badge-start, .badge-start[href], .label-start, .label-start[href] {
+    background-color: #6a8eeb;
+}
+.badge-running, .badge-running[href], .label-running, .label-running[href] {
+    background-color: #32b925;
+}
+.badge-stop, .badge-stop[href], .label-stop, .label-stop[href] {
+    background-color: #ff0000;
+}

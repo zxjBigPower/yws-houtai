@@ -33,11 +33,11 @@
     <div class="register">
         <div class="w">
             <div class="register-box">
-                <form action="{{url('register/complete')}} " method="post">
+                <form action="{{url('register/complete')}} " method="post" id="registerForm">
                     {{csrf_field()}}
                     <div id="userName">
                         <span>用户名</span>
-                        <input id="uname" name="uname" value="您的账户名或登录名" type="text" maxlength="20">
+                        <input id="uname" name="username" value="您的账户名或登录名" type="text" maxlength="20">
                         <div class="userName-alert"><span>!</span>支持字母、数字、符号的组合，4-20个字符</div>
                         <i class="close">×</i>
                         <p class="zc-success" id="zc-success"></p>
@@ -45,7 +45,7 @@
                     </div>
                     <div id="setPsw">
                         <span>设置密码</span>
-                        <input id="upsw" name="upsw" value="" type="password" maxlength="20"/>
+                        <input id="upsw" name="password" value="" type="password" maxlength="20"/>
                         <div class="setPsw-alert"><span>!</span>建议使用字母、数字和符号两种及以上的组合</div>
                         <i class="close">×</i>
                         <p class="zc-success" id="psw-success"></p>
@@ -53,7 +53,7 @@
                     </div>
                     <div id="mobNum">
                         <span>手机号码</span>
-                        <input id="unum" name="unum" value="建议使用常用手机" maxlength="11" type="text">
+                        <input id="unum" name="phone" value="建议使用常用手机" maxlength="11" type="text">
                         <div class="mobNum-alert"><span>!</span>完成验证后，可以使用该手机或邮箱登录和找回密码</div>
                         <i class="close">×</i>
 
@@ -64,13 +64,16 @@
                         <span>验证码</span>
                         <input id="ucon" name="ucon" value="请输入验证码" type="text">
                         <div class="authCode-alert"><span>!</span>看不清？点击图片更换验证码</div>
-                        <p><img src="{{Captcha::src()}}" onclick="this.src=this.src+'?'+(new Date()).getTime()" title="点击更换" style="cursor:pointer;"/></p>
+                        {{--<p><img src="{{Captcha::src()}}" onclick="this.src=this.src+'?'+(new Date()).getTime()" title="点击更换" style="cursor:pointer;"/></p>--}}
+                        <p><img src="{{asset('virify')}}" onclick="this.src=this.src+'?'+(new Date()).getTime()" title="点击更换" style="cursor:pointer;"/></p>
                         {{--<h6><a href="#">看不清，换一个</a></h6>--}}
                         <i class="close">×</i>
+                        <p class="zc-success" id="pcode-success"></p>
+                        <p class="zc-filed" id="pcode-filed"></p>
                     </div>
                     <div id="mobAuth">
                         <span>手机验证码</span>
-                        <input id="umoc" name="umoc" value="请输入手机验证码" type="text">
+                        <input id="umoc" name="umoc" value="请输入手机验证码" type="text" maxlength="6">
                         <p id="send_code" style="cursor: pointer;">获取验证码</p>
 
                         <p class="zc-success" id="getcode-success"></p>

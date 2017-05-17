@@ -1,0 +1,178 @@
+html{
+    font-size: 40px;
+    min-width: 320px;
+    max-width: 640px;
+    margin:0 auto;
+    background: #fff;
+}
+body{
+    padding-bottom: 1.25rem;
+    background: #fff;
+
+}
+/*页头开始*/
+div.head{
+    width: 8rem;
+    height: 1.1rem;
+    background: #9ec317;
+    position: fixed;
+    top:0;
+        left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+div.head .left{
+    float: left;
+    height: 0.5rem;
+    width: 0.7rem;
+    font-size: 0.7rem;
+    margin-top: 0.3rem;
+    margin-left: 0.28rem;
+    position: relative;
+    padding-left: 0.5rem;
+    line-height: 0.5rem;
+    margin-right: 0.2rem;
+    color: #fff;
+    font-size: 0.35rem;
+}
+div.head .left i{
+    width: 0.5rem;
+    height: 0.5rem;
+    display: inline-block;
+    background: url(../images/icon/dizhi.png)no-repeat 0 0;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-size:cover;
+}
+div.head .text{
+    float: left;
+    margin-top: 0.22rem;
+    width: 5.3rem;
+    height: 0.6rem;
+    border: 1px solid #Ccc;
+    padding-left: 0.1rem;
+    font-size: 0.3rem;
+    line-height: 0.6rem;
+    border-radius: 0.125rem;
+    background: #fff;
+    color: #666;
+}
+input {-webkit-appearance:none; /*去除input默认样式*/}
+div.head .kefu{
+    float: right;
+    margin-right: 0.2rem;
+    height: 1.1rem;
+    position: relative;
+    width: 0.5rem;
+
+}
+div.head .kefu .inkefu{
+    width: 0.55rem;
+    height: 0.55rem;
+    display: inline-block;
+    background: url(../images/icon/kefu.png)no-repeat 0 0rem;
+    background-size:cover;
+    position: absolute;
+    top:0.3rem;
+    left:0;
+}
+
+
+
+/*页头结束*/
+
+
+
+
+/*好铺开始*/
+.haopu{
+    padding: 0.25rem;
+    padding-right: 0;
+    margin-top: 1.12rem;
+}
+.haopu h4{
+    font-size: 0.3rem;
+    border-left: 0.1rem solid #26a96d;
+    padding-left: 0.2rem;
+    line-height: 0.5rem;
+}
+.haopu .dianpu{
+    overflow: hidden;
+}
+.haopu .dianpu .dian{
+    width: 3.65rem;
+    height: 1.3rem;
+    border:1px solid #dcdcdc;
+    background: #fff;
+    float: left;
+    margin-right: 0.15rem;
+    margin-top: 0.25rem;
+}
+.haopu .dianpu .dian img{
+    float: left;
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-right: 0.1rem;
+}
+.haopu .dianpu .dian .pu{
+    width: 2.2rem;
+    position: relative;
+    height: 1.3rem;
+    float: left;
+}
+
+.haopu .dianpu .dian h3{
+    font-size: 0.3rem;
+    color: #333;
+    width: 2.2rem;
+    font-weight: normal;
+    margin-top: 0.15rem;
+
+
+}
+.haopu .dianpu .dian p{
+    font-size: 0.2rem;
+    color: #666;
+    position: absolute;
+    bottom:0;
+    left: 0
+}
+/*好铺结束*/
+
+
+
+
+/*拍卖开始*/
+.footer{
+    height: 1.1rem;
+    font-size: 0.3rem;
+    text-align: center;
+    border-top: 1px solid #Ccc;
+    position: fixed;
+    left:50%;
+    bottom: 0;
+    z-index: 10;
+    width: 8rem;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.footer li{
+    width: 25%;
+    float: left;
+    line-height: 0.4rem;
+}
+.footer i{
+    display: block;
+    margin-top: 0.1rem;
+}
+.footer img{
+    width: 0.65rem;
+    height: 0.55rem;
+    display: block;
+    margin:0 auto
+}
+.footer li.current a{
+    color: #9ec318;
+}
+/*拍卖结束*/

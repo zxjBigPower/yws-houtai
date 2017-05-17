@@ -124,8 +124,10 @@
           > div {
             >input{
               position: absolute;
-              top: 18px;
+              top: 0;
+              padding: 18px 0;
               left: 80px;
+              color: #aaa;
             }
             > span {
               padding: 10px;
@@ -184,8 +186,12 @@
             background-color: #fff;
             margin-top: 30px;
             position: relative;
-            > input {
-              font: normal 400 16px/16px "SimSun";
+            > p {
+              font: normal 400 18px/16px "SimSun";
+              position: absolute;
+              top: 17px;
+              left: 80px;
+              color: #666;
             }
           }
           > a {
@@ -207,14 +213,17 @@
       .confim-2{
         display: none;
         #verify{
-          >button{
+          >p{
             position: absolute;
             top: 5px;
-            right: -100px;
-            width: 90px;
+            right: -115px;
+            width: 100px;
             height: 40px;
             background-color: #eee;
             border: 1px solid #ddd;
+            text-align: center;
+            line-height: 40px;
+            cursor: pointer;
           }
         }
         #affirm{
@@ -223,6 +232,17 @@
           background-color: #fff;
           margin-top: 30px;
           position: relative;
+          p{
+            display: none;
+            position: absolute;
+            background-color: rgba(255,0,0,.2);
+            color: red;
+            width: 90px;
+            top: 0;
+            line-height: 16px;
+            right: -100px;
+
+          }
         }
       }
       .confim-3{
@@ -257,6 +277,19 @@
 
 .findpsw {
   background-color: @bgc;
+}
+
+.findpsw .w .findpsw-box .confim-2 #verify>div{
+  position: absolute;
+  top: 5px;
+  right: -115px;
+  width: 100px;
+  height: 40px;
+  background-color: #eee;
+  border: 1px solid #ddd;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
 }
 
 

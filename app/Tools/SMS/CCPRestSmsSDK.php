@@ -1,5 +1,5 @@
 <?php
-namespace App\index_tool\SMS;
+namespace App\Tools\SMS;
 /*
  *  Copyright (c) 2014 The CCP project authors. All Rights Reserved.
  *

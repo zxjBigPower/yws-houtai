@@ -1,0 +1,395 @@
+html{
+    font-size: 40px;
+    min-width: 320px;
+    max-width: 640px;
+    margin:0 auto;
+    /*background: #fff;*/
+}
+
+body{
+    padding-top:0.1px;
+    background: #f2f2f2;
+}
+.header{
+    height: 1.1rem;
+    width: 8rem;
+    background: #fff;
+    position: fixed;
+    border-bottom: 1px solid #d8d8d8;
+    top:0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+
+}
+.back{
+    width: 0.7rem;
+    height: 0.7rem;
+    background: url(../images/icon/right.png)no-repeat 0 0;
+    background-size: cover;
+    float: left;
+    line-height: 1.1rem;
+    position: absolute;
+    left: 0.4rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.header h2{
+    text-align: center;
+    font-size: 0.4rem;
+    line-height: 1.1rem;
+
+}
+.more{
+    width: 0.7rem;
+    height: 0.7rem;
+    background: url(../images/icon/more.png)no-repeat 0 0;
+    background-size: cover;
+    float: left;
+    line-height: 1.1rem;
+    position: absolute;
+    right: 0.4rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.zoom{
+    width: 0.55rem;
+    height: 0.55rem;
+    background:url(../images/icon/zoom.png)no-repeat 0 0;
+    background-size: cover;
+     position: absolute;
+     display: inline-block;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+
+}
+/*顶部结束*/
+
+
+
+/*条件开始*/
+.tiaojian{
+     position: fixed;
+    top:1.12rem;
+    left:50%;
+    width: 8rem;
+    margin-left: -4rem;
+    /*border-right-width: 0.8rem;*/
+    background: #fff;
+    border-bottom: 1px solid #dcdcdc;
+    z-index: 1000;
+}
+.tiaojian .tiao{
+    height: 0.8rem;
+
+}
+.tiaojian .tiao li{
+    float: left;
+    width: 19%;
+    text-align: center;
+    line-height: 0.8rem;
+    height: 0.8rem;
+    font-size: 0.3rem;
+    position: relative;
+}
+.tiaojian .tiao li i{
+    width: 0.325rem;
+    height: 0.325rem;
+    background: url(../images/icon/paixu.png)no-repeat 0 0;
+    background-size: cover;
+    display: inline-block;
+    position: absolute;
+    top:0.25rem;
+    right: 0.1rem;
+}
+.tiaojian .tiao li .xuan{
+    width: 8rem;
+    height: 100%;
+ position: fixed;
+    top:1.93rem;
+    left:50%;
+    margin-left: -4rem;
+    background: rgba(0,0,0,0.5);
+    z-index: 100;
+    display: none;
+}
+.tiaojian .tiao li .chengshi{
+    width: 8rem;
+    height: 3.9rem;
+    background: #ffffff;
+    position: fixed;
+    top:1.93rem;
+    left:50%;
+    margin-left: -4rem;
+    z-index: 1000;
+}
+.tiaojian .tiao li .chengshi .sheng{
+    float: left;
+    height: 3.4rem;
+    background:#ededed;
+
+}
+.tiaojian .tiao li .chengshi .sheng li{
+    float: none;
+    background:#ededed;
+    width: 3rem;
+    line-height: 0.675rem;
+    height: 0.675rem;
+}
+.tiaojian .tiao li .chengshi .sheng li.qian{
+    background: #fff;
+}
+.tiaojian .tiao li .chengshi .shi{
+    float: right;
+    width: 5rem;
+    height: 3.4rem;
+
+    position: relative;
+}
+.tiaojian .tiao li .chengshi .shi li{
+    float: none;
+    width: 100%;
+    height: 3.4rem;
+    position: absolute;
+    top:0;
+    left:0;
+    display: none;
+}
+.tiaojian .tiao li .chengshi .shi li div{
+    float: left;
+    width: 33.3333%;
+    margin:0.4rem 0;
+}
+.tiaojian .tiao li .chengshi .shi li div p{
+    line-height: 0.1rem;
+}
+.tiaojian .tiao li.saixuan{
+    width: 20%;
+    text-align: right;
+    padding-right: 0.2rem;
+}
+.chengshi .shouqi{
+    line-height: 0.45rem;
+    height: 0.45rem;
+    border-top:1px solid #ccc;
+}
+.tiaojian .tiao li.saixuan i{
+    width: 0.325rem;
+    height: 0.325rem;
+    background: url(../images/icon/saixuan.png)no-repeat 0 0;
+    background-size: cover;
+    display: inline-block;
+    position: absolute;
+    top:0.25rem;
+    left: 0.5rem;
+}
+
+
+
+/*条件结束*/
+
+
+
+
+
+
+
+
+
+
+/*拍卖开始*/
+.paimai{
+margin-top: 2rem;
+}
+.paimai .pai{
+    height: 0.8rem;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+
+.paimai .mai img{
+    width: 3.8rem;
+    height: 3.175rem;
+}
+
+.paimai .mai .left{
+    width: 3.8rem;
+    height: 3.175rem;
+    float: left;
+    position: relative;
+}
+.paimai .mai .left .start{
+    width: 1.675rem;
+    height: 0.425rem;
+    line-height:0.425rem; 
+    background: #5bacf3;
+    position: absolute;
+    top:2.5rem;
+    left: 0;
+    font-size: 0.3rem;
+    color: #fff;
+    text-align: center;
+    border-radius: 0 0.07rem 0.07rem 0;
+}
+.paimai .mai .all{
+    margin-bottom: 0.075rem;
+    overflow: hidden;
+    border-bottom: 1px solid #f9f9f9;
+    background: #fff;
+    margin-bottom: 0.25rem;
+}
+.paimai .mai .jijiang .start{
+    background: #9EC317;
+}
+.paimai .mai .right{
+    float: right;
+    width: 4rem;
+    padding: 0.1rem;
+    height:2.975rem;
+
+}
+.paimai .mai .right h3{
+    font-size: 0.32rem;
+    font-weight: normal;
+    line-height: 0.45rem;
+    color: #565656;
+    height: 0.9rem;
+    overflow: hidden;
+}
+.paimai .mai .right .dangqian{
+    font-size: 0.315rem;
+    line-height: 0.95rem;
+    color: #6f6f6f;
+
+}
+.paimai .mai .right .dangqian strong{
+    color: #ed2d08;
+    font-weight: 600;
+    font-size: 0.375rem;
+}
+.paimai .mai .right .jieshu{
+    font-size: 0.315rem;
+    color: #6f6f6f;
+    margin-bottom: 0.3rem;
+    overflow: hidden;
+    height: 0.425rem;
+
+}
+.paimai .mai .right .jieshu strong{
+    color: #000;
+    font-weight: 600;
+    font-size: 0.325rem;
+}
+.paimai .mai .right .renshu{
+    font-size: 0.2rem;
+    border-top: 1px solid #ccc;
+    overflow: hidden;
+    height: 0.575rem;
+    line-height: 0.575rem;
+
+
+}
+.paimai .mai .right .renshu div{
+    float: left;
+    margin-right: 0.5rem;
+    height: 0.575rem;
+    line-height: 0.575rem;
+}
+.paimai .mai .right .renshu div i{
+    font-weight: 600;
+}
+/*拍卖结束*/
+
+
+
+/*筛选开始*/
+.shaixuan{
+    width: 8rem;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:100%;
+    margin-left: 0rem;
+    /*display: none;*/
+    z-index: 1004;
+}
+.shaixuan .left{
+    width: 1.95rem;
+    background: rgba(0,0,0,0.5);
+    float: left;
+    height: 16rem;
+
+}
+.shaixuan .right{
+    width: 5.85rem;
+    background: #fff;
+    float: right;
+    height: 16rem;
+    padding-left: 0.2rem;
+    font-size: 0.3rem;
+}
+
+.shaixuan .right h3{
+    margin-top: 0.35rem;
+    font-size: 0.4rem;
+    font-weight: normal;
+    color: #808080;
+}
+.shaixuan .right ul{
+    margin-top: 0.1rem;
+    overflow: hidden;
+}
+.shaixuan .right li{
+    width: 1.75rem;
+    height: 0.65rem;
+    border:1px solid #dcdcdc;
+    font-size: 0.3rem;
+    text-align: center;
+    line-height: 0.65rem;
+    float: left;
+    margin-right: 0.1rem;
+    margin-top: 0.15rem;
+    color: #808080;
+}
+.shaixuan .right li.cu{
+    border: 1px solid #9ec317;
+    color: #9ec317;
+}
+.shaixuan .right p{
+    font-size: 0.3rem;
+    float: left;
+    line-height: 0.65rem;
+    margin-top: 0.25rem;
+}
+.shaixuan .right input{
+     width: 1.5rem;
+    height: 0.65rem;
+    margin-top: 0.25rem;
+    border:1px solid #dcdcdc;
+    outline: none;
+}
+.shaixuan .right .wancheng{
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    left:1.95rem;
+    width: 6.05rem;;
+    height: 1rem;
+
+}
+.shaixuan .right .wancheng div{
+    float: left;
+    width: 50%;
+    text-align: center;
+    line-height: 1rem;
+    font-size: 0.3rem;
+}
+.shaixuan .right .wancheng div.cheng{
+    background: #F9F9F9;
+}
+.shaixuan .right .wancheng div.zhi{
+    background: #9ec317;
+    color: #fff;
+}
+/*筛选结束*/

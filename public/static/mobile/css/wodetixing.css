@@ -1,0 +1,42 @@
+/*我的提醒开始*/
+.tixing{
+    margin-top: 1.12rem;
+    background: #fff;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    width: 7.5rem;
+}
+.tixing .biaoti{
+    overflow: hidden;
+    line-height: 0.725rem;
+}
+.tixing .biaoti p{
+    float: left;
+    font-size: 0.35rem;
+    color: #a9a9a9;
+}
+.tixing .biaoti p b{
+    color: #262626;
+    font-weight: normal;
+}
+.tixing .biaoti i{
+    float: right;
+    width: 0.7rem;
+    height: .7rem;
+    background: url(../images/icon/yibu.png)no-repeat 0 0;
+    display: inline-block;
+    background-size: cover;
+   
+}
+.tixing p.contant{
+    font-size: 0.3rem;
+    line-height: 0.5rem;
+    margin-top: 0.1rem;
+    color: #7c7b7b;
+
+}
+.tixing li{
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid #e6e6e6;
+}
+/*我的提醒结束*/

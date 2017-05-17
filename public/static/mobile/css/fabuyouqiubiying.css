@@ -1,0 +1,104 @@
+/*设置开始*/
+.shezhi{
+    margin-top: 1.12rem;
+    padding-top: 0.325rem;
+
+}
+
+.shezhi .ziliao{
+    padding-bottom:2rem;
+}
+.shezhi .ziliao li{
+    height: 0.9rem;
+    border-bottom: 1px solid #dcdcdc;
+    border-top: 1px solid #dcdcdc;
+    background: #fff;
+    font-size: 0.3rem;
+    padding-left: 0.5rem;
+    margin-top: 0.055rem;
+   line-height: 0.9rem;
+   overflow: hidden;
+}
+.shezhi .ziliao li span{
+    float: left;
+    display: inline-block;
+    width: 2.15rem;
+    color: #a9a9a9;
+    font-size: 0.3rem;
+    line-height: 1rem;
+
+}
+.shezhi .ziliao li .ming{
+    float: left;
+    height: .9rem;
+
+}
+.shezhi .ziliao li .ming input{
+    height:0.8rem;
+    padding-top: 0.03rem;
+    outline: none;
+    font-size: 0.3rem;
+}
+::-webkit-input-placeholder { /* WebKit browsers */
+color:#333;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+color:#333;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+color:#333;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+color:#333;
+}
+
+
+
+.fabu{
+    position: fixed;
+    bottom:0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 1.25rem;
+    background: #9ec317;
+    color: #fff;
+    text-align: center;
+    line-height: 1.25rem;
+    font-size: 0.4rem;
+    color: #fff;
+    width: 8rem;
+}
+/*设置结束*/
+
+/*a  upload */
+.a-upload {
+    padding: 4px 10px;
+    position: relative;
+    cursor: pointer;
+    color: #000;
+    border-radius: 4px;
+    overflow: hidden;
+    *display: inline-block;
+    *zoom: 1;
+    line-height: 1rem;
+      
+}
+.a-upload i{
+      background: url(../images/icon/paizhao.png)no-repeat 0 0.05rem;
+    background-size: cover;
+    width: 0.7rem;
+    height: 0.7rem;
+    display: inline-block;
+    float: right;
+}
+.a-upload  input {
+    position: absolute;
+    font-size: 100px;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer;
+    line-height:1rem;
+
+}

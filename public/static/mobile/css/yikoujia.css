@@ -1,0 +1,231 @@
+/*页头开始*/
+html{
+    font-size: 40px;
+    min-width: 320px;
+    max-width: 640px;
+    margin:0 auto;
+}
+body{
+    background: #f2f2f2;
+
+}
+/*页头结束*/
+
+
+
+/*一口价开始*/
+.yikoujia{
+    margin-top: 1.12rem;
+}
+.yikoujia .yikou{
+    overflow: hidden;
+    border-bottom: 1px solid #dcdcdc;
+}
+.yikoujia .yikou li{
+    float: left;
+    width: 33.3333%;
+    font-size: 0.3rem;
+    line-height: 0.8rem;
+    height: 0.8rem;
+    text-align: center;
+    color: #262626;
+}
+.yikoujia .yikou li.cu{
+    border-bottom:2px solid #ff7600;
+    color: #ff7600;
+}
+.yikoujia .jia li{
+    position: relative;
+    top:0;
+    left:0;
+    display: none;
+}
+.yikoujia .jia .left{
+    width: 3.8rem;
+    height: 3.175rem;
+    float: left;
+    position: relative;
+}
+.yikoujia .jia img{
+    width: 3.8rem;
+    height: 3.175rem;
+}
+.yikoujia .jia .all{
+    margin-bottom: 0.275rem;
+    overflow: hidden;
+    border-bottom: 1px solid #f9f9f9;
+    background: #fff;
+}
+.yikoujia .jia .start{
+    background: #9EC317;
+}
+.yikoujia .jia .left .start{
+    width: 1.675rem;
+    height: 0.425rem;
+    line-height:0.425rem; 
+    background: #5bacf3;
+    position: absolute;
+    top:2.5rem;
+    left: 0;
+    font-size: 0.3rem;
+    color: #fff;
+    text-align: center;
+    border-radius: 0 0.07rem 0.07rem 0;
+}
+.yikoujia .jia .right{
+    float: right;
+    width: 4rem;
+    padding: 0.1rem;
+    height:2.975rem;
+
+}
+.yikoujia .jia .right h3{
+    font-size: 0.325rem;
+    font-weight: normal;
+    color: #565656;
+    height: 0.85rem;
+    overflow: hidden;
+}
+.yikoujia .jia .right .dangqian{
+    font-size: 0.315rem;
+    line-height: 0.95rem;
+    color: #6f6f6f;
+
+}
+.yikoujia .jia .right .dangqian strong{
+    color: #ed2d08;
+    font-weight: 600;
+    font-size: 0.3rem;
+}
+.yikoujia .jia .right .baozheng .dangqian{
+    line-height: 0.5rem;
+
+}
+.yikoujia .jia .right .jieshu{
+    font-size: 0.315rem;
+    color: #6f6f6f;
+    margin-bottom: 0.3rem;
+    overflow: hidden;
+    height: 0.425rem;
+    width: 4.6rem;
+
+}
+.yikoujia .jia .right .jieshu strong{
+    color: #000;
+    font-weight: 600;
+    font-size: 0.325rem;
+}
+
+
+
+
+
+
+
+
+.yikoujia .jia .alltwo{
+    border-top: 1px solid #e6e6e6;
+    height: 3.175rem;
+    background: #fff;
+    overflow: hidden;
+}
+.yikoujia .jia .alltwo .left{
+    float: left;
+    width: 3.9rem;
+    height: 3.175rem;
+}
+.yikoujia .jia .alltwo .left img{
+    float: left;
+    width: 3.9rem;
+    height: 3.175rem;
+}
+.jia .alltwo .right{
+    float: right;
+    width: 3.8rem;
+    position: relative;
+    height: 3.175rem;
+
+}
+.jia .alltwo .right h4{
+    font-size: 0.3rem;
+    font-weight: normal;
+    line-height: 0.75rem;
+}
+.jia .alltwo .right p{
+    font-size: 0.2rem;
+}
+.jia .alltwo .right .jia{
+    font-size: 0.2rem;
+    line-height:0.6rem;
+    margin-top: 0.2rem;
+
+}
+
+.jia .alltwo .right .dangqian{
+    font-size: 0.315rem;
+    line-height: 0.6rem;
+    color: #333;
+    margin-top: 0.2rem;
+
+}
+.jia .alltwo .right .dangqian strong{
+    color: #ed2d08;
+    font-weight: 600;
+    font-size: 0.3rem;
+}
+.jia .alltwo .right .jia b{
+    color: #ed2d08;
+    font-size: 0.2rem
+}
+.jia .alltwo .right  .chengjiao{
+    position: absolute;
+    bottom:0.1rem;
+    left:0rem;
+    height: 0.55rem;
+}
+.jia .alltwo .right  .chengjiao .jinxing{
+    float: right;
+    margin-right:-2.2rem;
+    width: 1.875rem;
+    height: 0.55rem;
+    color: #fff;
+    font-size: 0.3rem;
+    line-height: 0.55rem;
+    text-align: center;
+    background-color: #26a96d;
+    border-radius: 0.05rem;
+    margin-top: -0.2rem;
+}
+.jia .alltwo .right  .chengjiao .cheng{
+    font-size: 0.2rem;
+    float: left;
+    color: #373737;
+}
+
+
+
+.jia .all .right  .jiage{
+    font-size: 0.2rem;
+    color: #373737;
+    height: 1rem;
+    overflow: hidden;
+
+}
+
+.jia .all .right  .jiage .dangqian{
+    margin-top: 0rem;
+}
+.jia .all .right .fuqian{
+    width: 3.65rem;
+    height: 0.55rem;
+    background: #5bacf3;
+    border-radius: 0.05rem;
+    font-size: 0.3rem;
+    text-align: center;
+    line-height: 0.55rem;
+    margin:0 auto;
+}
+.jia .all .right .fuqian a{
+    color: #fff;
+}
+/*一口价结束*/

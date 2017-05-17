@@ -1,0 +1,62 @@
+/*快速注册开始*/
+.zhuce{
+    width: 8rem;
+    margin-top: 1.4rem;
+}
+.zhuce form div{
+    margin-top: 0.2rem;
+    height: 1rem;
+}
+.zhuce input{
+    width: 7.45rem;
+    height: 1rem;
+    background: #fff;
+    border:1px solid #d8d8d8;
+    padding-left: 0.5rem;
+    font-size: 0.3rem;
+    line-height: 1rem;
+    outline: none;
+    float: left;
+}
+input {-webkit-appearance:none; /*去除input默认样式*/}
+.zhuce .yanzhengma{
+    width: 8rem;
+    position: relative;
+}
+
+.zhuce .yanzhengma .yanzheng{
+    width: 2.3rem;
+    height: 0.75rem;
+     border-radius:0.15rem;
+     background-color: #9ec317;
+     position: absolute;
+     top:0.15rem;
+     right:0.35rem;
+     color: #fff;
+     font-size: 0.3rem;
+}
+.zhuce .xieyi input{
+    width: 0.35rem;
+    height: 0.35rem
+    color:#a9a9a9;
+    font-size: 0.3rem;
+    position: absolute;
+    top:-0.3rem;
+    left: 1.5rem;
+
+}
+
+.zhuce .btn{
+    width: 6.5rem;
+    height: 1rem;
+    line-height: 1rem;
+    background: #9ec317;
+    font-size: 0.4rem;
+    text-align: center;
+    color: #fff;
+    display: block;
+    margin:0 auto;
+    border-radius: 0.15rem;
+    margin-top: 0.5rem;
+}
+/*快速注册结束*/

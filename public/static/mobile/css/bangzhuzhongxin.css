@@ -1,0 +1,58 @@
+/*帮助中心开始*/
+.bangzhu{
+    margin-top: 1.12rem;
+}
+.bangzhu .bang{
+    height: 0.8rem;
+    border-bottom: 1px solid #dcdcdc;
+}
+.bangzhu .bang li{
+    height: 0.8rem;
+    line-height: 0.8rem;
+    float: left;
+    width: 20%;
+    font-size: 0.3rem;
+    text-align: center;
+    color: #262626;
+}
+.bangzhu .bang li.cu{
+    border-bottom: 2px solid #ff7600;
+    color: #ff7600;
+}
+.bangzhu .guize{
+    margin-top: 0.2rem;
+
+}
+.bangzhu .guize li{
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    display: none;
+
+}
+.bangzhu .guize li .dingyi{
+    height: 0.625rem;
+    margin-top: 0.4rem;
+    position: relative;
+}
+.bangzhu .guize li .dingyi h3{
+    float: left;
+    font-size: 0.45rem;
+    font-weight: normal;
+}
+.bangzhu .guize li .dingyi i{
+    border:1px solid #ccc;
+    float: right;
+    width: 4.5rem;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.bangzhu .guize li p{
+    font-size: 0.3rem;
+    margin-top: 0.5rem;
+    color: #565656;
+    line-height: 0.45rem;
+}
+/*帮助中心结束*/

@@ -1,0 +1,193 @@
+/*页头开始*/
+html{
+    font-size: 40px;
+    min-width: 320px;
+    max-width: 640px;
+    margin:0 auto;
+    background: #fff;
+}
+body{
+    padding-bottom: 1.25rem;
+}
+div.head{
+    width: 8rem;
+    height: 1.1rem;
+    background: #9ec317;
+    position: fixed;
+    top:0;
+        left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+div.head .left{
+    float: left;
+    height: 0.5rem;
+    width: 0.7rem;
+    font-size: 0.7rem;
+    margin-top: 0.3rem;
+    margin-left: 0.28rem;
+    position: relative;
+    padding-left: 0.5rem;
+    line-height: 0.5rem;
+    margin-right: 0.2rem;
+    color: #fff;
+    font-size: 0.35rem;
+}
+div.head .left i{
+    width: 0.5rem;
+    height: 0.5rem;
+    display: inline-block;
+    background: url(../images/icon/dizhi.png)no-repeat 0 0;
+    position: absolute;
+    top:0;
+    left: 0;
+    background-size:cover;
+}
+div.head .text{
+    float: left;
+    margin-top: 0.22rem;
+    width: 5.3rem;
+    height: 0.56rem;
+    border: 1px solid #Ccc;
+    padding-left: 0.1rem;
+    font-size: 0.3rem;
+    line-height: 0.6rem;
+    border-radius: 0.125rem;
+    outline: none;
+    background: #fff;
+    padding-top: 0.04rem;
+    color: #666;
+}
+input {-webkit-appearance:none; /*去除input默认样式*/}
+div.head .kefu{
+    float: right;
+    margin-right: 0.2rem;
+    height: 1.1rem;
+    position: relative;
+    width: 0.5rem;
+
+}
+div.head .kefu .inkefu{
+    width: 0.55rem;
+    height: 0.55rem;
+    display: inline-block;
+    background: url(../images/icon/kefu.png)no-repeat 0 0rem;
+    background-size:cover;
+    position: absolute;
+    top:0.3rem;
+    left:0;
+}
+/*页头结束*/
+
+/*必应开始*/
+.biying{
+    margin-top: 1.11rem;
+}
+.biying li{
+    padding: 0.225rem;
+    padding-bottom: 0;
+}
+.biying li .ying{
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 0.1rem;
+    
+}
+.biying li .left{
+    float: left;
+}
+.biying li .left img{
+    width: 1rem;
+    height: 1rem;
+    float: left;
+    margin-right: 0.3rem;
+    border-radius: 1rem;
+}
+.biying li .all {
+    overflow: hidden;
+    margin-bottom: 0.2rem;
+}
+.biying li .left .ming{
+    float: left;
+    padding-top: 0.1rem;
+}
+.biying li .left h3{
+    font-size: 0.3rem;
+    font-weight: normal;
+    line-height: 0.4rem;
+
+}
+.biying li .left p{
+    font-size: 0.2rem;
+}
+.biying li .all a{
+    float: right;
+    font-size: 0.3rem;
+    width: 1.9rem;
+    height: 0.6rem;
+    display: inline-block;
+    background: #9ec317;
+    border-radius: 0.2rem;
+    color: #fff;
+    text-align: center;
+    line-height: 0.6rem;
+    margin-top: 0.2rem;
+}
+
+.biying li .contant{
+    overflow: hidden;
+    line-height: 0.75rem;
+}
+.biying li .contant span{
+    float: left;
+    color: #555;
+    font-size: 0.3rem;
+}
+.biying li .contant p{
+    float: right;
+    font-size: 0.3rem;
+    color: #222;
+}
+.biying li .contant b{
+    float: right;
+    font-size: 0.3rem;
+    color: #ed2d08;
+}
+
+/*必应结束*/
+
+
+
+
+/*拍卖开始*/
+.footer{
+    height: 1.1rem;
+    font-size: 0.3rem;
+    text-align: center;
+    border-top: 1px solid #Ccc;
+    position: fixed;
+    left:50%;
+    bottom: 0;
+    z-index: 10;
+    width: 8rem;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.footer li{
+    width: 25%;
+    float: left;
+    line-height: 0.4rem;
+}
+.footer i{
+    display: block;
+    margin-top: 0.1rem;
+}
+.footer img{
+    width: 0.65rem;
+    height: 0.55rem;
+    display: block;
+    margin:0 auto
+}
+.footer li.current a{
+    color: #9ec318;
+}
+/*拍卖结束*/

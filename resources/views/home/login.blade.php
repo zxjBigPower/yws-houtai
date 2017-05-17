@@ -51,7 +51,7 @@
             </div>
             <div id="login-checkbox">
                 <input type="checkbox" name="auto_login" value="1" checked>自动登录
-                <a href="#">找回密码？</a>
+                <a href="{{url('findpassworld')}}">找回密码？</a>
             </div>
             <input id="submit" type="submit" value="立即登录">
 
