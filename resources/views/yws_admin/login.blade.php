@@ -50,14 +50,23 @@
                 dataType:'json',
                 data:$('#admin_login_form').serialize(),
                 success:function(data){
-                    console.log(data);
-                    return false},
+                    //console.log(data);
+                    if(data.status==400){
+                        $("#admin_login_wrong").css("display","block").html(data.msg);
+                    }
+                    if(data.status==200){
+                        location.href = "{{route('index')}}";
+                    }
+                    return false;
+                },
                 error:function(msg){
-                    alert(11);
+                    //alert(11);
+                    console.log(msg.responseText);
                     if(msg.responseText){
                         var json = JSON.parse(msg.responseText);
-                        console.log(json['captcha'][0]);
-                        $("admin_login_wrong").css("display","block").html('1');
+                        //console.log(json['captcha'][0]);
+                        $("#admin_login_wrong").css("display","block").html(json['captcha'][0]);
+                        //$("#admin_login_wrong");
                     }
                     return false;
                 },

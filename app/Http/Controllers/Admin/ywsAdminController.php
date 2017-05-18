@@ -32,19 +32,23 @@ class ywsAdminController extends Controller
         $this->validate($request,$roles,$msg);
         //$validator = Validator::make($request->all(),$roles,$msg);
         //验证数据
-
-            $admin = $request->name;
-            $pass = md5($request->password);
-            $res = DB::table('yws_ausers')->where([['name',$admin],['password',$pass]])->firstOrFail();
-            dd($res);
-/*            if($res){
-                echo 'passes';
-            }else{
-                echo 'error';
-            }
+        $admin = $request->name;
+        $pass = md5($request->password);
+        $res = DB::table('yws_ausers')->where([['name',$admin],['password',$pass]])->get()->toArray();
+        //dd($res);
+        if($res){
+            $request->session()->put('ywsadmin.user',$res[0]);
+            return json_encode(['status'=>200,'msg'=>'success']);
         }else{
-            return redirect('ywsAdmin/ywsLogin')->withErrors($validator);
-        }*/
+            return json_encode(['status'=>400,'msg'=>'请输入正确的用户名和密码']);
+        }
+    }
 
+    //后台首页
+    public function ywsIndex()
+    {
+
+        $data = 'data';
+        return view('yws_admin.index')->with('data',$data);
     }
 }

@@ -1,2 +1,321 @@
-The compress option has been deprecated. We recommend you use a dedicated css minifier, for instance see less-plugin-clean-css.
-.jmdl-banner{height:484px}.jmdl-banner .w{position:relative}.jmdl-banner .w .jmdl-tel{position:absolute;bottom:20px;left:50%;margin-left:-150px;width:300px;height:110px;background-color:rgba(255,255,255,0.5);border-radius:6px;z-index:6;box-sizing:border-box;padding:10px}.jmdl-banner .w .jmdl-tel p{font-size:20px;padding-bottom:10px}.jmdl-banner .w .jmdl-tel h3{font-size:20px;line-height:30px;text-align:center}.jmdl-terrace{margin-top:50px}.jmdl-terrace .w h3{text-align:center;font:normal 400 25px/50px "SimSun"}.jmdl-terrace .w>p{text-align:center;font:normal 400 15px/50px "SimSun"}.jmdl-terrace .w .jmdl-terrace-box{width:960px;height:260px;border:1px solid #ccc;border-radius:6px;margin:0 auto;padding:20px}.jmdl-terrace .w .jmdl-terrace-box .jmdl-terrace-box-l img{background-color:red;width:170px;height:170px;margin:45px 20px}.jmdl-terrace .w .jmdl-terrace-box .jmdl-terrace-box-r{padding-top:20px;overflow:hidden}.jmdl-terrace .w .jmdl-terrace-box .jmdl-terrace-box-r p{font:normal 400 16px/40px "SimSun"}.jmdl-strategy,.jmdl-flow{margin-top:100px;padding-top:20px;background-color:#eee}.jmdl-strategy .w,.jmdl-flow .w{background-color:#eee}.jmdl-strategy .w h3,.jmdl-flow .w h3{text-align:center;font:normal 400 25px/50px "SimSun"}.jmdl-strategy .w p,.jmdl-flow .w p{text-align:center;font:normal 400 15px/50px "SimSun";padding-bottom:30px}.jmdl-strategy .w img,.jmdl-flow .w img{width:650px;height:350px;background-color:pink;margin:0 auto 50px;display:block}.jmdl-superiority{margin-top:100px;padding-top:20px}.jmdl-superiority .w h3{text-align:center;font:normal 400 25px/50px "SimSun"}.jmdl-superiority .w p{text-align:center;font:normal 400 15px/50px "SimSun";padding-bottom:30px}.jmdl-superiority .w img{width:650px;height:350px;background-color:pink;margin:0 auto 50px;display:block}
+/*轮播图部分 start*/
+.jmdl-banner {
+  height: 484px;
+  background-color: #709ed0;
+}
+.jmdl-banner .w {
+  position: relative;
+  background: url("../img/jmdl-1.jpg") no-repeat center / cover;
+  /*.jmdl-tel{
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      margin-left: -150px;
+      width: 300px;
+      height: 110px;
+      background-color: rgba(255,255,255,.5);
+      border-radius: 6px;
+      z-index: 6;
+      box-sizing: border-box;
+      padding: 10px;
+      p{
+        font-size: 20px;
+        padding-bottom: 10px;
+      }
+      h3{
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+      }
+    }*/
+}
+/*轮播图部分 end*/
+/*平台 start*/
+.jmdl-terrace {
+  margin-top: 50px;
+}
+.jmdl-terrace .w h3 {
+  text-align: center;
+  font: normal 700 30px/50px "Microsoft Yahei";
+}
+.jmdl-terrace .w > p {
+  text-align: center;
+  font: normal 400 20px/50px "Microsoft Yahei";
+}
+.jmdl-terrace .w .jmdl-terrace-box {
+  width: 960px;
+  height: 260px;
+  border-radius: 6px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.jmdl-terrace .w .jmdl-terrace-box .jmdl-terrace-box-l img {
+  width: 170px;
+  height: 170px;
+  margin: 45px 40px 45px 20px;
+}
+.jmdl-terrace .w .jmdl-terrace-box .jmdl-terrace-box-r {
+  padding-top: 20px;
+  overflow: hidden;
+}
+.jmdl-terrace .w .jmdl-terrace-box .jmdl-terrace-box-r p {
+  font: normal 400 16px/40px "SimSun";
+}
+/*平台 end*/
+/*平台战略 start*/
+.jmdl-strategy,
+.jmdl-flow {
+  margin-top: 100px;
+  padding-top: 20px;
+  background-color: #eee;
+}
+.jmdl-strategy .w,
+.jmdl-flow .w {
+  background-color: #eee;
+}
+.jmdl-strategy .w h3,
+.jmdl-flow .w h3 {
+  text-align: center;
+  font: normal 700 30px/50px "Microsoft Yahei";
+}
+.jmdl-strategy .w p,
+.jmdl-flow .w p {
+  text-align: center;
+  font: normal 400 20px/50px "Microsoft Yahei";
+  padding-bottom: 30px;
+}
+.jmdl-strategy .w .p3-data,
+.jmdl-flow .w .p3-data {
+  width: 777px;
+  height: 593px;
+  margin: 0 auto;
+  background: url("../img/yws-jmdl/p3-bg.png") no-repeat center;
+  -webkit-background-size: 75% 75%;
+  background-size: 75% 75%;
+  position: relative;
+}
+.jmdl-strategy .w .p3-data > div,
+.jmdl-flow .w .p3-data > div {
+  position: absolute;
+  font: normal 400 16px/25px "Microsoft Yahei";
+  color: #222;
+  width: 168px;
+}
+.jmdl-strategy .w .p3-data .p3-data_1,
+.jmdl-flow .w .p3-data .p3-data_1 {
+  top: 151px;
+  left: 72px;
+  text-align: left;
+}
+.jmdl-strategy .w .p3-data .p3-data_2,
+.jmdl-flow .w .p3-data .p3-data_2 {
+  top: 338px;
+  left: 70px;
+  text-align: left;
+}
+.jmdl-strategy .w .p3-data .p3-data_3,
+.jmdl-flow .w .p3-data .p3-data_3 {
+  bottom: 180px;
+  right: 50px;
+  text-align: right;
+}
+.jmdl-strategy .w .p3-data .p3-data_4,
+.jmdl-flow .w .p3-data .p3-data_4 {
+  bottom: 55px;
+  left: 270px;
+  width: 230px;
+}
+.jmdl-strategy .w .p3-data .p3-data_5,
+.jmdl-flow .w .p3-data .p3-data_5 {
+  top: 145px;
+  right: 32px;
+  text-align: right;
+}
+/*平台战略 end*/
+/*平台优势 start*/
+.jmdl-superiority {
+  margin-top: 100px;
+  padding-top: 20px;
+}
+.jmdl-superiority .w h3 {
+  text-align: center;
+  font: normal 700 30px/50px "Microsoft Yahei";
+}
+.jmdl-superiority .w p {
+  text-align: center;
+  font: normal 400 20px/50px "Microsoft Yahei";
+  padding-bottom: 30px;
+}
+.jmdl-superiority .w .sup-box {
+  width: 850px;
+  height: 350px;
+  margin: 0 auto 50px;
+}
+.jmdl-superiority .w .sup-box ul {
+  width: 100%;
+  height: 100%;
+}
+.jmdl-superiority .w .sup-box ul li {
+  float: left;
+  width: 16.666667%;
+  height: 100%;
+  position: relative;
+}
+.jmdl-superiority .w .sup-box ul li i {
+  font-size: 80px;
+  color: #f94826;
+  position: absolute;
+  top: 130px;
+  left: 30px;
+}
+.jmdl-superiority .w .sup-box ul li p {
+  margin-top: 30px;
+  font-size: 16px ;
+  color: #000;
+  position: absolute;
+  bottom: 80px;
+  left: 37px;
+}
+/*平台优势 end*/
+/*合作流程 start*/
+.jmdl-flow {
+  background-color: #f9f9f9;
+}
+.jmdl-flow .w {
+  background-color: #f9f9f9;
+}
+.jmdl-flow .w .p5-c {
+  margin-bottom: 50px;
+}
+.jmdl-flow .w .p5-c .p5-c-box {
+  position: relative;
+  height: 444px;
+  width: 950px;
+  margin: 0 auto 100px;
+}
+.jmdl-flow .w .p5-c .p5-c-box .p5-c-l {
+  position: absolute;
+  font-size: 50px ;
+  color: black;
+  z-index: 20;
+  transform: scale(1, 2);
+}
+.jmdl-flow .w .p5-c .p5-c-box .p5-c-l-1 {
+  top: 120px;
+  left: 160px;
+}
+.jmdl-flow .w .p5-c .p5-c-box .p5-c-l-2 {
+  top: 120px;
+  left: 340px;
+}
+.jmdl-flow .w .p5-c .p5-c-box .p5-c-l-3 {
+  top: 120px;
+  left: 540px;
+}
+.jmdl-flow .w .p5-c .p5-c-box .p5-c-l-4 {
+  top: 120px;
+  left: 740px;
+}
+.jmdl-flow .w .p5-c .p5-c-box .p5-c-l-5 {
+  top: 280px;
+  left: 850px;
+  transform: rotateZ(90deg) scale(1, 2);
+}
+.jmdl-flow .w .p5-c .p5-c-box .p5-c-l-6 {
+  top: 415px;
+  left: 740px;
+}
+.jmdl-flow .w .p5-c .p5-c-box .p5-c-l-7 {
+  top: 415px;
+  left: 540px;
+}
+.jmdl-flow .w .p5-c .p5-c-box .p5-c-l-8 {
+  top: 415px;
+  left: 340px;
+}
+.jmdl-flow .w .p5-c .p5-c-box .p5-c-l-9 {
+  top: 415px;
+  left: 140px;
+}
+.jmdl-flow .w .p5-c .p5-c-box .p5-c-r {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #f9f9f9;
+  position: absolute;
+  text-align: center;
+}
+.jmdl-flow .w .p5-c .p5-c-box .p5-c-r i {
+  color: #f94826;
+  font-size: 90px;
+  text-align: center;
+}
+.jmdl-flow .w .p5-c .p5-c-box .p5-c-r i.yws-icon {
+  width: 90px;
+  height: 95px;
+  background: url("../img/yws.png") no-repeat center / contain;
+  display: block;
+  margin-left: 15px;
+}
+.jmdl-flow .w .p5-c .p5-c-box .p5-c-r p {
+  width: 120px;
+  font: normal 400 20px/70px "SimHei";
+  color: #0f0f0f;
+}
+.jmdl-flow .w .p5-c .p5-c-box .p5-c-r-01.p5-c-r > p {
+  font: normal 400 20px/42px "SimHei";
+}
+.jmdl-flow .w .p5-c .p5-c-box .p5-c-r-02 {
+  top: 180px;
+  left: 0;
+}
+.jmdl-flow .w .p5-c .p5-c-box .p5-c-r-02.p5-c-r > p {
+  margin-top: 25px;
+  font: normal 400 20px/35px "SimHei";
+}
+.jmdl-flow .w .p5-c .p5-c-box .p5-c-r-03 {
+  top: 100px;
+  left: 200px;
+}
+.jmdl-flow .w .p5-c .p5-c-box .p5-c-r-04 {
+  top: 100px;
+  left: 400px;
+}
+.jmdl-flow .w .p5-c .p5-c-box .p5-c-r-05 {
+  top: 100px;
+  left: 600px;
+}
+.jmdl-flow .w .p5-c .p5-c-box .p5-c-r-06 {
+  top: 100px;
+  left: 800px;
+}
+.jmdl-flow .w .p5-c .p5-c-box .p5-c-r-07 {
+  top: 400px;
+  left: 800px;
+}
+.jmdl-flow .w .p5-c .p5-c-box .p5-c-r-08 {
+  top: 400px;
+  left: 600px;
+}
+.jmdl-flow .w .p5-c .p5-c-box .p5-c-r-09 {
+  top: 400px;
+  left: 400px;
+}
+.jmdl-flow .w .p5-c .p5-c-box .p5-c-r-10 {
+  top: 400px;
+  left: 200px;
+}
+.jmdl-flow .w .p5-c .p5-c-box .p5-c-r-10.p5-c-r > p {
+  line-height: 30px;
+  margin-top: 20px;
+}
+.jmdl-flow .w .p5-c .p5-c-box .p5-c-r-11 {
+  top: 400px;
+  left: 0;
+}
+.jmdl-flow .w .p5-c > p {
+  font: normal 400 25px/145px "SimHei";
+  color: #000;
+  background-color: #fff;
+}
+/*合作流程 end*/

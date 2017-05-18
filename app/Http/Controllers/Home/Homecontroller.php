@@ -51,7 +51,7 @@ class Homecontroller extends Controller
             $res=yws_user::where('username',$uname)
                 ->orwhere('phone',$uname)
                 ->where('password',$pass)
-                ->first()->toArray();
+                ->get()->toArray();
             //dd(empty($res),$res);
             if($res){
                 $reponse->msg = '登录成功';
@@ -60,14 +60,16 @@ class Homecontroller extends Controller
                 if($request->has('auto_login')){
                     cache(['pass'=>$request->pass],60*24*7);
                     cache(['username'=>$request->uname],60*24*7);
+                    //cache(['id'=>$request->id],60*24*7);
                     //setcookie();
                     //session(['yws_user.uid' => $res]);
-                    $request->session()->put('ywsweb.user',$res);
+                    $request->session()->put('ywsweb.user',$res[0]);
                     return $result;
                 }else{
                     cache(['pass'=>null],1);
                     cache(['username'=>null],1);
-                    $request->session()->put('ywsweb.user',$res);
+                    cache(['id'=>null],1);
+                    $request->session()->put('ywsweb.user',$res[0]);
                     return $result;
                 }
             }else{

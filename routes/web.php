@@ -49,8 +49,15 @@ Route::group(['namespace'=>'Admin','prefix'=>'ywsAdmin'],function(){
     //登录页面
     Route::get('ywsLogin','ywsAdminController@ywsLogin');
     Route::post('dologin','ywsAdminController@ywsDoLogin')->name('dologin');
-    Route::group(['middleware'=>'ywsAdmin'],function(){
+    /*Route::group(['middleware'=>'ywsAdmin'],function(){
 
-    });
+    });*/
+    //后台首页
+    Route::get('adminIndex','ywsAdminController@ywsIndex')->name('index');
+    //文章管理===============================================================
+    //文章列表
+    Route::post('article','ywsArticleController@articleList')->name('article');
+    //添加文章
+    Route::post('article/add','ywsArticleController@articleAdd')->name('articleAdd');
 
 });

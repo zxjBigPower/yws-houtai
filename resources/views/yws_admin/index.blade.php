@@ -1,9 +1,9 @@
-@extends('admin.master')
+@extends('yws_admin.master')
 @section('header')
-    @include('admin.header')
+    @include('yws_admin.header')
 @endsection
 @section('menu')
-    @include('admin.menu')
+    @include('yws_admin.menu')
 @endsection
 @section('content')
     <section class="Hui-article-box">

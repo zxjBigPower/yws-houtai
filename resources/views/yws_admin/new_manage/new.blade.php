@@ -1,13 +1,4 @@
-@extends('admin.master')
-@section('header')
-    @include('admin.header')
-@endsection
-@section('menu')
-    @include('admin.menu')
-@endsection
-@section('content')
-    <section class="Hui-article-box">
-    <nav class="breadcrumb">
+ <nav class="breadcrumb">
         <i class="Hui-iconfont">&#xe67f;</i> 首页
         <span class="c-gray en">&gt;</span>新闻管理
         <span class="c-gray en">&gt;</span> 新闻列表
@@ -29,7 +20,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                @foreach($news as $val)
+               {{-- @foreach($news as $val)
                 <tr class="text-c">
                     <td>{{ $val->id }}</td>
                     <td>{{ $val->name }}</td>
@@ -50,17 +41,17 @@
                         </a>
                     </td>
                 </tr>
-                @endforeach
+                @endforeach--}}
                 </tbody>
             </table>
         </div>
     </div>
-    </section>
+
     <!--请在下方写此页面业务相关的脚本-->
-    <script type="text/javascript" src="{{ asset('admin/lib/My97DatePicker/4.8/WdatePicker.js')}}"></script>
-    <script type="text/javascript" src="{{ asset('admin/lib/datatables/1.10.0/jquery.dataTables.min.js')}}"></script>
-    <script type="text/javascript" src="{{ asset('admin/lib/laypage/1.2/laypage.js')}}"></script>
-    <script type="text/javascript">
+    <script type="text/javascript" src="{{ asset('yws_admin/lib/My97DatePicker/4.8/WdatePicker.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('yws_admin/lib/datatables/1.10.0/jquery.dataTables.min.js')}}"></script>
+    <script type="text/javascript" src="{{ asset('yws_admin/lib/laypage/1.2/laypage.js')}}"></script>
+    {{--<script type="text/javascript">
 
         /*资讯-删除*/
         function new_del(obj,id){
@@ -133,5 +124,4 @@
                 });
             });
         }
-    </script>
-@endsection
+    </script>--}}

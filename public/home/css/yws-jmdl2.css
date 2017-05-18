@@ -1,0 +1,442 @@
+#dowebok {
+  width: 100%;
+  height: 100%;
+}
+#dowebok .section {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font: 16px "Microsoft Yahei";
+  color: #fff;
+}
+#fp-nav ul li {
+  margin-top: 20px;
+}
+#fp-nav ul li a span {
+  height: 15px;
+  width: 15px;
+}
+#fp-nav ul li:first-child a {
+  background: url("../img/yws-jmdl/logo4.png") no-repeat -5px 0;
+  width: 24px;
+  height: 24px;
+}
+#fp-nav ul li:first-child a:hover {
+  transition: all 1s;
+  transform-origin: center;
+  transform: scale(1.5, 1.5);
+}
+#fp-nav ul li:first-child a.active span {
+  background-color: rgba(0, 0, 0, 0);
+}
+#fp-nav ul li:first-child a span {
+  border: none;
+}
+#fp-nav ul li:nth-of-type(2) a.active span {
+  background-color: red;
+}
+#fp-nav ul li:nth-of-type(2) a span {
+  border: 1px solid red;
+}
+#fp-nav ul li:nth-of-type(3) a.active span {
+  background-color: pink;
+}
+#fp-nav ul li:nth-of-type(3) a span {
+  border: 1px solid pink;
+}
+#fp-nav ul li:nth-of-type(4) a.active span {
+  background-color: blue;
+}
+#fp-nav ul li:nth-of-type(4) a span {
+  border: 1px solid blue;
+}
+#fp-nav ul li:nth-of-type(5) a.active span {
+  background-color: hotpink;
+}
+#fp-nav ul li:nth-of-type(5) a span {
+  border: 1px solid hotpink;
+}
+/*点击切换下一页*/
+#btn {
+  position: fixed;
+  left: 50%;
+  bottom: 0px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: all 1s;
+}
+#btn:hover {
+  transform: scale(1.5, 1.5);
+}
+#btn > div {
+  position: absolute;
+  left: 8px;
+  width: 32px;
+  height: 12px;
+}
+#btn .icon-1 {
+  background: url("../img/yws-jmdl/sign_1.png") no-repeat center;
+  top: 34px;
+}
+#btn .icon-2 {
+  background: url("../img/yws-jmdl/sign_2.png") no-repeat center;
+  top: 23px;
+}
+#btn .icon-3 {
+  background: url("../img/yws-jmdl/sign_3.png") no-repeat center;
+  top: 12px;
+}
+/*c侧边切换栏*/
+#fp-nav.right {
+  right: 40px;
+}
+/*第一页*/
+/*动画效果*/
+@keyframes rotate1 {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+@-moz-keyframes rotate1 {
+  /* Firefox */
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+@-webkit-keyframes rotate1 {
+  /* Safari 和 Chrome */
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+@-o-keyframes rotate1 {
+  /* Opera */
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+.rotate11 {
+  transform-origin: center;
+  animation: rotate1 10s linear infinite;
+  -moz-animation: rotate1 10s linear infinite;
+  /* Firefox */
+  -webkit-animation: rotate1 10s linear infinite;
+  /* Safari 和 Chrome */
+  -o-animation: rotate1 10s linear infinite;
+  /* Opera */
+}
+/*1080p屏适配*/
+/*第一屏*/
+.section1 {
+  background-color: #709ed0;
+}
+.section1 .w {
+  background: url("../img/jmdl-1.jpg") no-repeat center;
+}
+/*第二屏*/
+.section2 {
+  position: relative;
+  overflow: hidden;
+}
+.section2 .w p:first-child {
+  font: normal 400 35px/80px "Microsoft Yahei";
+  color: #000;
+  margin-top: 240px;
+  position: relative;
+}
+.section2 .w h6 {
+  color: black;
+  font: normal 400 20px "Microsoft Yahei";
+}
+.section2 .w .yws-p2-con {
+  width: 100%;
+  height: 70%;
+  background-color: #fff;
+  opacity: 1;
+  z-index: 7;
+  padding: 50px;
+  box-sizing: border-box;
+}
+.section2 .w .yws-p2-con .yws-p2-c {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: relative;
+}
+.section2 .w .yws-p2-con .yws-p2-c img {
+  width: 274px;
+  height: 274px;
+  position: absolute;
+  top: 14%;
+  margin-left: 0;
+  left: -50px;
+}
+.section2 .w .yws-p2-con .yws-p2-c p {
+  width: 830px;
+  font: normal 400 20px/38px "Microsoft Yahei";
+  text-align: left;
+  margin: 40px;
+  color: black;
+  margin-top: 72px;
+}
+/*第三屏*/
+.section3 p {
+  text-align: center;
+  color: #000;
+  padding: 0 30px;
+  position: relative;
+  font: normal 400 35px/75px "Microsoft Yahei";
+  display: inline-block;
+}
+.section3 h6 {
+  text-align: center;
+  font: normal 400 20px "Microsoft Yahei";
+  color: #0f0f0f;
+}
+.section3 .p3-data {
+  width: 777px;
+  height: 593px;
+  margin: 0 auto;
+  background: url("../img/yws-jmdl/p3-bg.png") no-repeat center;
+  -webkit-background-size: 75% 75%;
+  background-size: 75% 75%;
+  position: relative;
+}
+.section3 .p3-data > div {
+  position: absolute;
+  font-size: 24px;
+  color: #222;
+  width: 284px;
+}
+.section3 .p3-data .p3-data_1 {
+  top: 151px;
+  left: -52px;
+  text-align: left;
+}
+.section3 .p3-data .p3-data_2 {
+  top: 338px;
+  left: -30px;
+  text-align: left;
+}
+.section3 .p3-data .p3-data_3 {
+  bottom: 148px;
+  right: -36px;
+  text-align: right;
+}
+.section3 .p3-data .p3-data_4 {
+  bottom: 0;
+  left: 254px;
+  width: 260px;
+}
+.section3 .p3-data .p3-data_5 {
+  top: 148px;
+  right: -100px;
+  text-align: right;
+}
+/*第四屏*/
+.section4 .p4-ptys > p {
+  margin-top: 240px;
+  text-align: center;
+  color: #000;
+  padding: 0 30px;
+  position: relative;
+  font: normal 400 35px/75px "Microsoft Yahei";
+  display: inline-block;
+}
+.section4 .p4-ptys h6 {
+  text-align: center;
+  font: normal 400 20px "Microsoft Yahei";
+  color: #0f0f0f;
+}
+.section4 .p4-ptys .w {
+  width: 967px;
+  height: 555px;
+  margin: 200px auto 0;
+  position: relative;
+}
+.section4 .p4-ptys .w ul li {
+  float: left;
+  width: 16.666667%;
+}
+.section4 .p4-ptys .w ul li i {
+  font-size: 80px;
+  color: #f94826;
+}
+.section4 .p4-ptys .w ul li p {
+  margin-top: 30px;
+  font-size: 16px ;
+  color: #000;
+}
+/*第五屏*/
+.section5 {
+  background-color: #fff;
+}
+.section5 .p5-header {
+  height: 160px;
+}
+.section5 .p5-header > p {
+  margin-top: 170px;
+  text-align: center;
+  color: #000;
+  padding: 0 30px;
+  position: relative;
+  font: normal 400 35px/75px "Microsoft Yahei";
+  display: inline-block;
+}
+.section5 .p5-header h6 {
+  text-align: center;
+  font: normal 400 20px "Microsoft Yahei";
+  color: #0f0f0f;
+}
+.section5 .p5-c {
+  margin-top: 100px;
+}
+.section5 .p5-c .p5-c-box {
+  position: relative;
+  height: 444px;
+  width: 950px;
+  margin: 0 auto 100px;
+}
+.section5 .p5-c .p5-c-box .p5-c-l {
+  position: absolute;
+  font-size: 50px ;
+  color: black;
+  z-index: 20;
+  transform: scale(1, 2);
+}
+.section5 .p5-c .p5-c-box .p5-c-l-1 {
+  top: 120px;
+  left: 160px;
+}
+.section5 .p5-c .p5-c-box .p5-c-l-2 {
+  top: 120px;
+  left: 340px;
+}
+.section5 .p5-c .p5-c-box .p5-c-l-3 {
+  top: 120px;
+  left: 540px;
+}
+.section5 .p5-c .p5-c-box .p5-c-l-4 {
+  top: 120px;
+  left: 740px;
+}
+.section5 .p5-c .p5-c-box .p5-c-l-5 {
+  top: 280px;
+  left: 850px;
+  transform: rotateZ(90deg) scale(1, 2);
+}
+.section5 .p5-c .p5-c-box .p5-c-l-6 {
+  top: 415px;
+  left: 740px;
+}
+.section5 .p5-c .p5-c-box .p5-c-l-7 {
+  top: 415px;
+  left: 540px;
+}
+.section5 .p5-c .p5-c-box .p5-c-l-8 {
+  top: 415px;
+  left: 340px;
+}
+.section5 .p5-c .p5-c-box .p5-c-l-9 {
+  top: 415px;
+  left: 140px;
+}
+.section5 .p5-c .p5-c-box .p5-c-r {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+}
+.section5 .p5-c .p5-c-box .p5-c-r i {
+  color: #f94826;
+  font-size: 90px;
+}
+.section5 .p5-c .p5-c-box .p5-c-r i.yws-icon {
+  width: 90px;
+  height: 95px;
+  background: url("../img/yws.png") no-repeat center / contain;
+  display: block;
+  margin-left: 15px;
+}
+.section5 .p5-c .p5-c-box .p5-c-r p {
+  width: 120px;
+  font: normal 400 20px/20px "SimHei";
+  text-align: center;
+  color: #0f0f0f;
+}
+.section5 .p5-c .p5-c-box .p5-c-r-01.p5-c-r > p {
+  font: normal 400 20px/42px "SimHei";
+}
+.section5 .p5-c .p5-c-box .p5-c-r-02 {
+  top: 180px;
+  left: 0;
+}
+.section5 .p5-c .p5-c-box .p5-c-r-02.p5-c-r > p {
+  font: normal 400 20px/35px "SimHei";
+}
+.section5 .p5-c .p5-c-box .p5-c-r-03 {
+  top: 100px;
+  left: 200px;
+}
+.section5 .p5-c .p5-c-box .p5-c-r-04 {
+  top: 100px;
+  left: 400px;
+}
+.section5 .p5-c .p5-c-box .p5-c-r-05 {
+  top: 100px;
+  left: 600px;
+}
+.section5 .p5-c .p5-c-box .p5-c-r-06 {
+  top: 100px;
+  left: 800px;
+}
+.section5 .p5-c .p5-c-box .p5-c-r-07 {
+  top: 400px;
+  left: 800px;
+}
+.section5 .p5-c .p5-c-box .p5-c-r-08 {
+  top: 400px;
+  left: 600px;
+}
+.section5 .p5-c .p5-c-box .p5-c-r-09 {
+  top: 400px;
+  left: 400px;
+}
+.section5 .p5-c .p5-c-box .p5-c-r-10 {
+  top: 400px;
+  left: 200px;
+}
+.section5 .p5-c .p5-c-box .p5-c-r-10.p5-c-r > p {
+  line-height: 30px;
+}
+.section5 .p5-c .p5-c-box .p5-c-r-11 {
+  top: 400px;
+  left: 0;
+}
+.section5 .p5-c > p {
+  font: normal 400 25px/145px "SimHei";
+  color: #000;
+  background-color: #fff;
+}
+/*让导航栏浮动*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 34;
+  width: 100%;
+}

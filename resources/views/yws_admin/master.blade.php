@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
     <meta http-equiv="Cache-Control" content="no-siteapp" />
     <link rel="icon" href="{{url('Home/yws.ico')}}">
+    {{--========================================================--}}
+
     <!--[if lt IE 9]>
     <script type="text/javascript" src="{{ asset('yws_admin/lib/html5.js')}}"></script>
     <script type="text/javascript" src="{{ asset('yws_admin/lib/respond.min.js') }}"></script>
@@ -20,16 +22,19 @@
     <link rel="stylesheet" type="text/css" href="{{asset('yws_admin/static/h-ui.admin/skin/default/skin.css')}}" id="skin" />
     <link rel="stylesheet" type="text/css" href="{{asset('yws_admin/static/h-ui.admin/css/style.css')}}" />
     <link href="{{asset('yws_admin/static/h-ui.admin/css/H-ui.login.css')}}" rel="stylesheet" type="text/css" />
-    <!--[if IE 6]>
+    <!--[if IE 6]-->
+    <link href="{{ asset('umeditor1.2.3-utf8-php/themes/default/css/umeditor.css') }}" type="text/css" rel="stylesheet">
+
+    <!--===================================================-->
     <script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js" ></script>
     <script>DD_belatedPNG.fix('*');</script>
-    <![endif]-->
+    <!--[endif]-->
     <!--/meta 作为公共模版分离出去-->
 
     <title>云温商后台管理</title>
-    @yield('css')
+    {{--@yield('css')--}}
 </head>
-<body>
+<body class="big-page">
 <!--_header 作为公共模版分离出去-->
 @yield('header')
 <!--/_header 作为公共模版分离出去-->
@@ -45,14 +50,52 @@
 
 <!--_footer 作为公共模版分离出去-->
 
+<script type="text/javascript" src="{{ asset('umeditor1.2.3-utf8-php/third-party/template.min.js') }}"></script>
+<script type="text/javascript" charset="utf-8" src="{{ asset('umeditor1.2.3-utf8-php/umeditor.config.js') }}"></script>
+<script type="text/javascript" charset="utf-8" src="{{ asset('umeditor1.2.3-utf8-php/umeditor.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('umeditor1.2.3-utf8-php/lang/zh-cn/zh-cn.js') }}"></script>
+{{--=================================--}}
 <script type="text/javascript" src="{{asset('yws_admin/lib/layer/2.4/layer.js')}}"></script>
 <script type="text/javascript" src="{{asset('yws_admin/static/h-ui/js/H-ui.js')}}"></script>
 <script type="text/javascript" src="{{asset('yws_admin/static/h-ui.admin/js/H-ui.admin.page.js')}}"></script>
 <!--/_footer /作为公共模版分离出去-->
-@yield('js')
+{{--@yield('js')--}}
 <!--请在下方写此页面业务相关的脚本-->
 <script type="text/javascript">
+    //执行load方法
+    function chengeLinkLoad(linkload,data){
+        // alert(linkload);
 
+        var  rdata=data+'&_token='+"{{csrf_token()}}";
+        //console.log(rdata);
+        $.post(linkload,rdata,function(result){
+            $('section').html(result);
+        });//post
+        var page = encodeURIComponent(data,true);
+        var url = location.pathname + '?page=' + page;
+        //console.log('...')
+        history.pushState(//history.pushState  创建新的历史记录条目
+            linkload,'',url);//linkload是load请求的地址，URL是生成的地址
+    }
+
+    function showChild(obj,id)
+    {
+        if(id !== false){
+            var url = $(obj).attr('name');
+            var param = "param="+"left"+parseInt(500*Math.random());
+            //var param = "param="+"left"
+            $('#leftmenue').removeClass("open");
+            $("body").removeClass("big-page");
+            $("aside ul li").css('display','none');
+            $("."+id).css('display','block');
+            chengeLinkLoad(url,param);
+        }else{
+            var url = $(obj).attr('name');
+            var param = "param="+"left"+parseInt(500*Math.random());
+            //var param = "param="+"left"
+            chengeLinkLoad(url,param);
+        }
+    }
 </script>
 <!--/请在上方写此页面业务相关的脚本-->
 

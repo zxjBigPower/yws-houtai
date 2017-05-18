@@ -1,0 +1,354 @@
+.yx-rotation-title {
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.6), transparent);
+}
+.header {
+  margin-bottom: 5px;
+}
+/*banner部分 start*/
+.yws-banner .w .yx-rotaion {
+  width: 670px;
+  height: 320px;
+}
+.yws-banner .w .yx-rotaion .rotaion_list li a img {
+  width: 670px;
+  height: 320px;
+}
+.yws-banner .w ul {
+  width: 180px;
+}
+.yws-banner .w ul li {
+  width: 180px;
+  height: 100px;
+  background-color: red;
+  margin: 7px 15px 0 15px;
+  position: relative;
+}
+.yws-banner .w ul li a img {
+  width: 100%;
+  height: 100%;
+}
+.yws-banner .w ul li a p {
+  position: absolute;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.6), transparent);
+  bottom: 0;
+  padding-left: 10px;
+}
+.yws-banner .w .rotaion-b {
+  width: 310px;
+  height: 100px;
+  background-color: #eee;
+  position: relative;
+}
+.yws-banner .w .rotaion-b > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.yws-banner .w .rotaion-b > a span {
+  position: absolute;
+  top: 5px;
+  left: 25px;
+  font: normal 700 14px/30px "Microsoft Yahei";
+}
+.yws-banner .w .rotaion-b > a p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font: normal 400 16px/30px "Microsoft Yahei";
+  margin: -15px 0 0 -40px;
+}
+.yws-banner .w .rotaion-t {
+  width: 310px;
+  height: 210px;
+  background-color: #eee;
+  margin: 7px 0 4px;
+  position: relative;
+}
+.yws-banner .w .rotaion-t > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.yws-banner .w .rotaion-t > a span {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+  font: normal 700 14px/30px "Microsoft Yahei";
+}
+.yws-banner .w .rotaion-t > a p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font: normal 400 16px/30px "Microsoft Yahei";
+  margin: -15px 0 0 -56px;
+}
+.yws-banner .w .rotaion-t a.knowMore {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -30px;
+  width: 60px;
+  height: 30px;
+  display: inline;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  font: normal 400 12px/30px "Microsoft Yahei";
+}
+/*banner部分 end*/
+/*content start*/
+.yws-con {
+  margin-bottom: 100px;
+}
+.yws-con .w .con-l .con-ctr {
+  margin-top: 20px;
+  width: 870px;
+  border-bottom: 1px solid #ccc;
+}
+.yws-con .w .con-l .con-ctr h3 {
+  padding: 10px 20px;
+  float: left;
+  font: normal 400 14px/30px "Microsoft Yahei";
+}
+.yws-con .w .con-l .con-ctr h3.hover {
+  border-bottom: 2px solid #ccc;
+}
+.yws-con .w .con-l .con-ctr h6 {
+  float: right;
+  padding: 10px 20px;
+  font: normal 400 12px/30px "Microsoft Yahei";
+}
+.yws-con .w .con-l .con-jrtt,
+.yws-con .w .con-l .con-ppxw {
+  transition: all 1s;
+  position: relative;
+}
+.yws-con .w .con-l .con-jrtt .getMore,
+.yws-con .w .con-l .con-ppxw .getMore {
+  padding: 5px 20px;
+  border: 2px solid #fc9900;
+  background-color: #fff;
+  border-radius: 5px;
+  display: block;
+  margin: 20px auto;
+  width: 320px;
+  height: 45px;
+  font: 400 16px/32px "Microsoft Yahei";
+  text-align: center;
+}
+.yws-con .w .con-l .con-jrtt .getMore:hover,
+.yws-con .w .con-l .con-ppxw .getMore:hover {
+  border: 1px solid cornflowerblue;
+}
+.yws-con .w .con-l .con-jrtt ul,
+.yws-con .w .con-l .con-ppxw ul {
+  width: 870px;
+  position: absolute;
+  background-color: #fff;
+  transition: transform 1s;
+  transform: rotateY(0deg);
+  -webkit-transition: transform 1s;
+}
+.yws-con .w .con-l .con-jrtt ul li,
+.yws-con .w .con-l .con-ppxw ul li {
+  padding: 10px;
+  position: relative;
+  border-bottom: 1px dashed #ccc;
+}
+.yws-con .w .con-l .con-jrtt ul li > a:hover span,
+.yws-con .w .con-l .con-ppxw ul li > a:hover span {
+  color: #666;
+}
+.yws-con .w .con-l .con-jrtt ul li > a > span,
+.yws-con .w .con-l .con-ppxw ul li > a > span {
+  position: absolute;
+  bottom: 20px;
+  left: 15px;
+  background-color: #DDD;
+  padding: 0 5px;
+  border-radius: 11px;
+}
+.yws-con .w .con-l .con-jrtt ul li > a img,
+.yws-con .w .con-l .con-ppxw ul li > a img {
+  width: 200px;
+  height: 120px;
+  background-color: blueviolet;
+}
+.yws-con .w .con-l .con-jrtt ul li > a h3,
+.yws-con .w .con-l .con-ppxw ul li > a h3 {
+  overflow: hidden;
+  font: normal 400 16px/30px "Microsoft Yahei";
+  padding-left: 20px;
+  float: left;
+}
+.yws-con .w .con-l .con-jrtt ul li > span,
+.yws-con .w .con-l .con-ppxw ul li > span {
+  float: right;
+  font: normal 400 13px/30px "Microsoft Yahei";
+  color: #aaa;
+}
+.yws-con .w .con-l .con-jrtt ul li p,
+.yws-con .w .con-l .con-ppxw ul li p {
+  position: absolute;
+  width: 620px;
+  top: 50px;
+  left: 30px;
+  margin-left: 200px;
+  color: #999;
+  text-align: left;
+}
+.yws-con .w .con-l .con-jrtt ul li .con-info,
+.yws-con .w .con-l .con-ppxw ul li .con-info {
+  position: absolute;
+  bottom: 10px;
+  left: 230px;
+  color: #fc9900;
+}
+.yws-con .w .con-l .con-jrtt ul li .con-info > span,
+.yws-con .w .con-l .con-ppxw ul li .con-info > span {
+  position: relative;
+  left: 15px;
+}
+.yws-con .w .con-l .con-jrtt ul li .con-info > span i,
+.yws-con .w .con-l .con-ppxw ul li .con-info > span i {
+  position: absolute;
+  left: -15px;
+  top: -2px;
+}
+.yws-con .w .con-l .con-jrtt ul li .con-info > span del,
+.yws-con .w .con-l .con-ppxw ul li .con-info > span del {
+  text-decoration: none;
+}
+.yws-con .w .con-l .con-jrtt ul li .con-info em,
+.yws-con .w .con-l .con-ppxw ul li .con-info em {
+  position: relative;
+  left: 65px;
+}
+.yws-con .w .con-l .con-jrtt ul li .con-info em i,
+.yws-con .w .con-l .con-ppxw ul li .con-info em i {
+  position: absolute;
+  left: -15px;
+  top: -2px;
+}
+.yws-con .w .con-l .con-jrtt ul li .con-info em del,
+.yws-con .w .con-l .con-ppxw ul li .con-info em del {
+  text-decoration: none;
+}
+.yws-con .w .con-l .con-jrtt ul li .con-info strong,
+.yws-con .w .con-l .con-ppxw ul li .con-info strong {
+  position: relative;
+  font-weight: normal;
+  left: 115px;
+}
+.yws-con .w .con-l .con-jrtt ul li .con-info strong i,
+.yws-con .w .con-l .con-ppxw ul li .con-info strong i {
+  position: absolute;
+  left: -15px;
+  top: -2px;
+}
+.yws-con .w .con-l .con-jrtt ul li .con-info strong del,
+.yws-con .w .con-l .con-ppxw ul li .con-info strong del {
+  text-decoration: none;
+}
+.yws-con .w .con-r {
+  width: 310px;
+  margin-top: 20px;
+}
+.yws-con .w .con-r h3 {
+  font: normal 400 16px/30px "Microsoft Yahei";
+  position: relative;
+  margin: 11px 0 10px 20px;
+}
+.yws-con .w .con-r h3::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -14px;
+  width: 3px;
+  height: 20px;
+  background-color: #fc9900;
+}
+.yws-con .w .con-r h3 span {
+  float: right;
+  padding: 7px 20px 0 0;
+  font: normal 400 12px/12px "Microsoft Yahei";
+}
+.yws-con .w .con-r .con-r-box {
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.yws-con .w .con-r .con-r-box ul li {
+  position: relative;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  border-bottom: 1px solid #ccc;
+}
+.yws-con .w .con-r .con-r-box ul li > span {
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 25px;
+  height: 25px;
+  font: italic 700 18px/23px "Microsoft Yahei";
+  text-align: center;
+  color: #9d9d9d;
+}
+.yws-con .w .con-r .con-r-box ul li a > p {
+  margin-left: 35px;
+  font: normal 400 14px/23px "Microsoft Yahei";
+}
+.yws-con .w .con-r .con-r-box ul li em {
+  margin-left: 35px;
+  position: relative;
+}
+.yws-con .w .con-r .con-r-box ul li em i {
+  font-size: 14px;
+}
+.yws-con .w .con-r .con-r-box ul li em del {
+  text-decoration: none;
+  position: absolute;
+  top: -2px;
+  right: -22px;
+}
+.yws-con .w .con-r .con-r-box ul li em:last-child i {
+  font-size: 18px;
+}
+.yws-con .w .con-r .con-r-bot > h3 {
+  font: normal 400 16px/50px "Microsoft Yahei ";
+  margin-left: 20px;
+  position: relative;
+}
+.yws-con .w .con-r .con-r-bot > h3::before {
+  content: "";
+  background-color: #fc9900;
+  position: absolute;
+  top: 15px;
+  left: -10px;
+  height: 20px;
+  width: 3px;
+}
+.yws-con .w .con-r .con-r-bot .con-r-bot-bq {
+  padding: 15px;
+  background-color: #eee;
+  width: 310px;
+}
+.yws-con .w .con-r .con-r-bot .con-r-bot-bq a {
+  padding: 2px 5px;
+  float: left;
+  margin: 10px 15px 0 0;
+  background-color: #fff;
+}
+.yws-con .w .con-r .con-r-bot .con-r-bot-b1 {
+  height: 100px;
+  background-color: #eee;
+  margin-top: 20px;
+}
+.yws-con .w .con-r .con-r-bot .con-r-bot-b2 {
+  margin-top: 20px;
+  height: 100px;
+  background-color: #eee;
+}
+/*content end*/

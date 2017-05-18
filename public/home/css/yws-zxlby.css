@@ -1,0 +1,190 @@
+/*banner start*/
+.yws-banner .w > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.yws-banner .w > a .banner {
+  height: 100px;
+  background-color: red;
+}
+.yws-banner .w h3 {
+  font: 400 16px/50px "Microsoft Yahei";
+  margin-left: 10px;
+  text-align: left;
+  margin-top: 5px;
+}
+/*banner end*/
+/*内容模块 start*/
+.con .w .con-box {
+  float: left;
+}
+.con .w .con-box .getMore {
+  padding: 5px 20px;
+  border: 2px solid #fc9900;
+  background-color: #fff;
+  border-radius: 5px;
+  display: block;
+  margin: 20px auto;
+  width: 320px;
+  height: 45px;
+  font: 400 16px/32px "Microsoft Yahei";
+  text-align: center;
+  transition: all 1s;
+}
+.con .w .con-box .getMore:hover {
+  background-color: #fc9900;
+  color: #fff;
+}
+.con .w .con-box ul {
+  width: 870px;
+}
+.con .w .con-box ul > h3 {
+  font: 700 16px/50px "Microsoft Yahei";
+  padding-left: 20px;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+.con .w .con-box ul > h3::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 6px;
+  width: 90px;
+  height: 4px;
+  background-color: #fc9900;
+}
+.con .w .con-box ul > h3 span {
+  float: right;
+  font: 400 15px/65px "Microsoft Yahei";
+  color: #ccc;
+}
+.con .w .con-box ul li {
+  padding: 10px;
+  position: relative;
+  border-bottom: 1px dashed #ccc;
+}
+.con .w .con-box ul li > a:hover span {
+  color: #666;
+}
+.con .w .con-box ul li > a > span {
+  position: absolute;
+  bottom: 20px;
+  left: 15px;
+  background-color: #DDD;
+  padding: 0 5px;
+  border-radius: 11px;
+}
+.con .w .con-box ul li > a img {
+  width: 200px;
+  height: 120px;
+  background-color: blueviolet;
+}
+.con .w .con-box ul li > a h3 {
+  overflow: hidden;
+  font: normal 400 16px/30px "SimSun";
+  padding-left: 20px;
+  float: left;
+}
+.con .w .con-box ul li > span {
+  float: right;
+  font: normal 400 13px/30px "SimSun";
+  color: #aaa;
+}
+.con .w .con-box ul li p {
+  position: absolute;
+  width: 620px;
+  height: 42px;
+  overflow: hidden;
+  top: 50px;
+  left: 30px;
+  margin-left: 200px;
+  color: #999;
+  text-align: left;
+}
+.con .w .con-box ul li .con-info {
+  position: absolute;
+  bottom: 16px;
+  left: 230px;
+  color: #fc9900;
+  font: normal 400 15px "Microsoft Yahei";
+}
+.con .w .con-box ul li .con-info > span {
+  position: relative;
+  left: 15px;
+}
+.con .w .con-box ul li .con-info > span i {
+  position: absolute;
+  left: -20px;
+  top: 2px;
+}
+.con .w .con-box ul li .con-info > span del {
+  text-decoration: none;
+}
+.con .w .con-box ul li .con-info em {
+  position: relative;
+  left: 65px;
+}
+.con .w .con-box ul li .con-info em i {
+  position: absolute;
+  left: -20px;
+  top: 2px;
+}
+.con .w .con-box ul li .con-info em del {
+  text-decoration: none;
+}
+.con .w .con-box ul li .con-info strong {
+  position: relative;
+  font-weight: normal;
+  left: 115px;
+}
+.con .w .con-box ul li .con-info strong i {
+  position: absolute;
+  left: -20px;
+  top: 2px;
+  font-size: 18px;
+}
+.con .w .con-box ul li .con-info strong del {
+  text-decoration: none;
+}
+.con .w .con-r-bot {
+  float: right;
+}
+.con .w .con-r-bot > h3 {
+  margin-top: 20px;
+  font: normal 400 14px/30px "SimSun";
+  margin-left: 20px;
+  position: relative;
+}
+.con .w .con-r-bot > h3::before {
+  content: "";
+  background-color: #fc9900;
+  position: absolute;
+  top: 5px;
+  left: -10px;
+  height: 20px;
+  width: 3px;
+}
+.con .w .con-r-bot .con-r-bot-bq {
+  padding: 15px;
+  background-color: #eee;
+  width: 310px;
+}
+.con .w .con-r-bot .con-r-bot-bq a {
+  padding: 2px 5px;
+  float: left;
+  margin: 10px 15px 0 0;
+  background-color: #fff;
+}
+.con .w .con-r-bot .con-r-bot-b1 {
+  height: 100px;
+  background-color: #eee;
+  margin-top: 20px;
+}
+.con .w .con-r-bot .con-r-bot-b2 {
+  margin-top: 20px;
+  height: 100px;
+  background-color: #eee;
+}
+/*内容模块 end*/
+/*底部颜色修改*/
