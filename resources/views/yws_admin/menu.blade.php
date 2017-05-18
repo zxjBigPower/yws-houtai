@@ -1,5 +1,4 @@
 <?php
-
 $login_name = session('admin.name');
 $admins = \Illuminate\Support\Facades\DB::table('admins')
     ->join('admin_roles','admins.role_id','=','admin_roles.id')
@@ -31,7 +30,6 @@ foreach ($perm as $val){
                 @endif
             @endforeach
         </dl>
-
     </div>
 </aside>
 {{--菜单开启--}}

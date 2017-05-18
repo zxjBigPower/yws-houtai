@@ -56,6 +56,7 @@
         </div>&lt;!&ndash; /.container-fluid &ndash;&gt;
     </div>
 </div>-->
+<?php var_dump(session('ywsweb.user'))?>
 <!--最简单的样式 -->
 <div class="header clearfix">
     <div class="w">
@@ -70,8 +71,13 @@
             <li><a href="{{url('')}}#">关于我们</a></li>
         </ul>
         <ol>
-            <li><a href="{{url('register')}}" class="yws-header-zc">免费注册</a></li>
-            <li><a href="{{url('login')}}">登录</a></li>
+            @if(session('ywsweb.user'))
+                <li><a href="javascript:;" class="yws-header-zc">你好！{{session('ywsweb.user')['username']}}</a></li>
+                <li><a href="javascript:;" id="ywslogout">退出</a></li>
+            @else
+                <li><a href="{{url('register')}}" class="yws-header-zc">免费注册</a></li>
+                <li><a href="{{url('login')}}">登录</a></li>
+            @endif
         </ol>
     </div>
 </div>

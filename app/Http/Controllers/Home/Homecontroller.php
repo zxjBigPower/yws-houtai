@@ -5,8 +5,6 @@ namespace App\Http\Controllers\Home;
 use App\ajaxModel;
 use App\HomeModel\tmpPhone;
 use App\HomeModel\yws_user;
-use App\index_tool\SMS\SendTemplateSMS;
-use App\Tools\Curl;
 use App\Tools\SMS\ALiYuSMS;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -53,22 +51,23 @@ class Homecontroller extends Controller
             $res=yws_user::where('username',$uname)
                 ->orwhere('phone',$uname)
                 ->where('password',$pass)
-                ->select('id')
-                ->get()->toArray();
+                ->first()->toArray();
             //dd(empty($res),$res);
             if($res){
                 $reponse->msg = '登录成功';
                 $reponse->status = 200;
                 $result = $reponse->tojson();
                 if($request->has('auto_login')){
-                    cache(['username'=>$request->uname,'pass'=>$pass],1);
-                    //cache(['username'=>$request->uname],1);
+                    cache(['pass'=>$request->pass],60*24*7);
+                    cache(['username'=>$request->uname],60*24*7);
                     //setcookie();
-                    session(['yws_user.uid' => $res]);
+                    //session(['yws_user.uid' => $res]);
+                    $request->session()->put('ywsweb.user',$res);
                     return $result;
                 }else{
-                    cache('username',null);
-                    session(['yws_user.uid' => $res]);
+                    cache(['pass'=>null],1);
+                    cache(['username'=>null],1);
+                    $request->session()->put('ywsweb.user',$res);
                     return $result;
                 }
             }else{
@@ -80,6 +79,13 @@ class Homecontroller extends Controller
             return view('home.login');
         }
 
+    }
+
+    //退出
+    public function logout(Request $request)
+    {
+        $request->session()->forget('ywsweb.user');
+        return json_encode(['status'=>200,'msg'=>'退出成功']);
     }
 
     //注册验证
@@ -259,16 +265,21 @@ class Homecontroller extends Controller
 
         $data = $request->only('username','password','phone');
         $data['password'] = md5('ywsuser'.$data['password']);
-        $user = yws_user::create($data);
-
-        if($user){
-            $res = $user->toArray();
-            $request->session()->put('web.user',$res);
-            $request->session()->get('web.user');
-            return view('home.register-success');
+        $user = new yws_user();
+        $user->username = $data['username'];
+        $user->phone = $data['phone'];
+        $user->password = $data['password'];
+        $status = $user->save();
+        //dd($status);
+        if($status){
+            $res = yws_user::where('phone',$data['phone'])->first()->toArray();
+            $request->session()->put('ywsweb.user',$res);
+            //$request->session()->get('web.user');
+            return view('home.register-success')->with('username',$res['username']);
         }else{
             return redirect('home.register');
         }
+
     }
 
     //找回密码
@@ -304,4 +315,6 @@ class Homecontroller extends Controller
             return json_encode(['status'=>400,'msg'=>'修改失败']);
         }
     }
+
+
 }

@@ -22,18 +22,22 @@ $(function () {
         }
         $("#u-alert").css("display","none");
 //检查用户名或号码
-        $.post('/findpassworld',{'name':$(this).val(),'_token':_token},function(data){
-            console.log(data);
+        $.post('findpassworld',{'name':$(this).val(),'_token':_token},function(data){
+            //console.log(data);
             if(data.status==200){
                 $("#u-alert").css("display","none");
                 phone=data.phone;
                 $('#showphone').html(data.msg);
                 //console.log('name.gou');
                 flag_name = true;
+                if(flag_bcode && flag_name){
+                    $("#submit1").css('background-color','green');
+                }
             }else{
                 $("#u-alert").css("display","block");
                 $("#u-alert").css("color","red");
                 $("#u-alert").html(data.msg);
+                $('#showphone').html('');
                 flag_name = false;
             }
         },'json');
@@ -47,7 +51,7 @@ $(function () {
     });
 //点击换图
     $('#changecode').click(function(){
-        console.log($('#imgcode').attr('src'));
+        //console.log($('#imgcode').attr('src'));
         $('#imgcode').attr('src',$('#imgcode').attr('src')+'?'+(new Date()).getTime());
     });
 
@@ -55,12 +59,15 @@ $(function () {
     $('#info').bind('blur keyup',function(){
         var pcode = $('#info').val();
         if(pcode.match(/\w{4}/)){
-            $.post('/pcode',{'pcode':pcode,'_token':_token},function(data){
+            $.post('pcode',{'pcode':pcode,'_token':_token},function(data){
                 if(data.status == 200){
 
                     $('#confirmation').css('border-color','#ddd');
 
                     flag_bcode = true;
+                    if(flag_bcode && flag_name){
+                        $("#submit1").css('background-color','green');
+                    }
                 }else if(data.status == 400){
 
                     $('#confirmation').css('border-color','red');
@@ -95,6 +102,8 @@ $(function () {
             $(".confim-1").css("display","none");
             $(".confim-2").css("display","block");
             $(".findpsw-line-2").addClass("finishc")
+        }else{
+            return;
         }
     })
     //第二页判断
@@ -130,14 +139,14 @@ $(function () {
             num --;
         }, 1000);
         $.ajax({
-            url:'/sendCode',
+            url:'sendCode',
             dataType:'json',
             type:'get',
             data:{'phone':phone},
             success:function (data) {
                 console.log(data);
                 if (data.status == 200) {
-                    alert('发送成功');
+                    //alert('发送成功');
                     send_code = true;
                     return;
                 }else if(data.msg=='Frequency limit reaches.'){
@@ -162,7 +171,7 @@ $(function () {
         var code=$('#v-number').val();
         if(code.match(/\d{4}/) ){
                 $.ajax({
-                    url:'/checkPhoneCode',
+                    url:'checkPhoneCode',
                     dataType:'json',
                     type:'get',
                     data:{code:code,phone:phone},
@@ -172,7 +181,7 @@ $(function () {
                             $('.confim-2').css('border-color','#ddd');
                             flag_code = true;
                         }else if(data.status == 401){
-                            alert(11);
+                            //alert(11);
                             $('.confim-2').css('border-color','red');
                             flag_code = false;
                             console.log(data.msg);
@@ -198,17 +207,24 @@ $(function () {
         }
 
     });
+
+    //按钮换色
+    $('#setting,#confim').bind('keyup',function(){
+        if($("#confim").val() == $("#setting").val() && flag_code){
+            $("#submit2").css('background-color','green');
+        }
+    });
     //第二页切换点击
     $("#submit2").on("click",function () {
         if(!$("#confim").val()){
             flag_pass = false;
-            console.log(flag_pass+11+'a');
+            //console.log(flag_pass+11+'a');
             $('#setting-psw').css('border-color','red');
             return;
         }
         if($("#confim").val() !== $("#setting").val()){
             flag_pass = false;
-            console.log(flag_pass+22+'b');
+            //console.log(flag_pass+22+'b');
             $("#alert-un").css("display","block");
             return;
         }else {
@@ -217,14 +233,14 @@ $(function () {
             $("#alert-un").css("display","none");
         }
         if(flag_pass && flag_code){
-            console.log(flag_pass);
+            //console.log(flag_pass);
             $.ajax({
                 url:'changpass',
                 data:{'_token':_token,'phone':phone,'password':$("#confim").val()},
                 dataType:'json',
                 type:'post',
                 success:function(data){
-                    console.log(data);
+                    //console.log(data);
                     if(data.status==200){
                         $(".confim-2").css("display","none");
                         $(".confim-3").css("display","block");

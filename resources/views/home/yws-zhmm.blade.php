@@ -20,7 +20,7 @@
     <div class="w">
         <div class="yws-logo fl">
             <div class="yws-logo-line"></div>
-            <a href="{{url('Home/')}}index.html"><img src="{{asset('Home/img/logo.png')}}" alt="" height="80px"></a>
+            <a href="{{url('/')}}"><img src="{{asset('Home/img/logo.png')}}" alt="" height="80px"></a>
         </div>
         <p class="fl">找回密码</p>
     </div>
@@ -82,7 +82,7 @@
                 <div class="con-success">
                     <img src="{{asset('Home/img/u587.png')}}" alt="">
                     <p>恭喜您，密码重置成功</p>
-                    <a href="{{url('login')}}">立即登录</a>
+                    <a href="{{url('login')}}" style="background-color:green; ">立即登录</a>
                 </div>
             </div>
         </div>

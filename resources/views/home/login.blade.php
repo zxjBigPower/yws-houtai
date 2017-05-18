@@ -38,13 +38,13 @@
             <p>会员登录</p>
             <div id="username" >
                 <i class="iconfont icon-touxiang"></i>
-                <input type="text" name="uname" placeholder="用户名/手机号">
+                <input type="text" name="uname" value="{{cache('username')}}" placeholder="用户名/手机号">
                 <div class="login-alert"></div>
             </div>
-            <div id="psw"><i class="iconfont icon-mima"></i><input type="text" name="pass" placeholder="请输入登录密码"></div>
+            <div id="psw"><i class="iconfont icon-mima"></i><input type="password" name="pass" value="{{cache('pass')}}" placeholder="请输入登录密码"></div>
             <div id="checking">
                 <i class="iconfont icon-yanzhengma"></i>
-                <input type="text" name="captcha" id="captcha" placeholder="请输入验证码">
+                <input type="text" name="captcha" id="captcha" value="" placeholder="请输入验证码">
                 <div class="yanzhengma fr">
                     <img src="{{Captcha::src()}}" onclick="this.src=this.src+'?'+(new Date()).getTime()" title="点击更换" style="cursor:pointer;"/>
                 </div>
@@ -56,7 +56,7 @@
             <input id="submit" type="submit" value="立即登录">
 
             <div id="zhuce">
-                <a href="#">微信</a><a href="#">QQ</a><a href="#" class="border-none">微博</a>
+                <a href="#"><i class="iconfont icon-weixin"></i></a><a href="#"><i class="iconfont icon-qq"></i></a><a href="#" class="border-none"><i class="iconfont icon-unie61d"></i></a>
                 <p class="fr"><a href="{{url('register')}}"><i class="iconfont icon-guanbi01"></i>立即注册</a></p>
             </div>
         </form>

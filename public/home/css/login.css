@@ -1,2 +1,187 @@
-The compress option has been deprecated. We recommend you use a dedicated css minifier, for instance see less-plugin-clean-css.
-.header div.w div.yws-logo a{display:block;width:100%;height:100%}.header div.w div.yws-logo a img{padding-right:20px}.header div.w p{padding-left:10px;font:normal 700 18px/100px "SimSun";color:#000}.header div.w .yws-login{font:normal 700 16px/100px "SimSun"}.header div.w .yws-login span{color:#999}.header div.w .yws-login a{padding:30px 30px 30px 0}.header .w .yws-logo{width:223px;height:100px;position:relative}.header .w .yws-logo::before{position:absolute;width:1px;height:50px;content:"";background-color:#ccc;top:24px;right:0}.login{background-color:#eee;border-top:1px solid #ddd;border-bottom:1px solid #ddd;height:421px;padding:27px}.login .w{background-color:#eee}.login .w .login-banner{background-color:orangered;width:650px;height:100%;margin-left:30px}.login .w .login-log{width:310px;height:100%;border:1px solid #ddd;border-top:2px solid #bbb;background-color:#fff;position:relative}.login .w .login-log form{padding:20px}.login .w .login-log form p{font:normal 700 16px/20px "SimSun"}.login .w .login-log form>div{border:1px solid #ddd;background-color:#fff;height:50px;margin-top:20px}.login .w .login-log form>div i{display:inline-block;width:50px;height:100%;border-right:1px solid #ddd;font-size:24px;line-height:50px;text-align:center}.login .w .login-log form>div input{margin-left:10px;line-height:30px}.login .w .login-log form #username{margin-top:30px;position:relative}.login .w .login-log form #username .login-alert{display:none;position:absolute;width:270px;height:20px;text-align:center;background-color:#fcc;color:red;top:-25px;left:-1px}.login .w .login-log form #login-checkbox{border:none;height:20px}.login .w .login-log form #login-checkbox input{margin-right:5px;vertical-align:middle}.login .w .login-log form #login-checkbox>a{float:right}.login .w .login-log form>input{margin-top:10px;margin-bottom:10px;height:42px;width:100%;font:normal 700 16px/42px "SimSun";color:#fff;display:block;text-align:center;background-color:#9d9d9d}.login .w .login-log form #zhuce{background-color:#fafafa;border-top:1px solid #ddd;width:100%;height:50px;position:absolute;bottom:0;left:-1px}.login .w .login-log form #zhuce>a{padding:2px 15px;border-right:1px solid #ddd;font:normal 400 15px/50px "SimSun"}.login .w .login-log form #zhuce>a.border-none{border-right:none}.login .w .login-log form #zhuce p{padding-right:10px;font-weight:400}.login .w .login-log form #zhuce p a{padding:5px 10px;color:#F10215}.login .w .login-log form #zhuce p a i{font:normal 400 15px/50px "SimSun";border:none;display:inline;margin-right:4px}.login .w .login-log form #checking .yanzhengma{width:68px;height:30px;margin:10px 10px 10px 0;background-color:gold}
+/*header start*/
+.header div.w div.yws-logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.header div.w div.yws-logo a img {
+  padding-right: 20px;
+}
+.header div.w p {
+  padding-left: 20px;
+  font: normal 700 22px/100px "Microsoft Yahei";
+  color: #000;
+}
+.header div.w .yws-login {
+  font: normal 700 16px/100px "Microsoft Yahei";
+}
+.header div.w .yws-login span {
+  color: #999;
+}
+.header div.w .yws-login a {
+  color: #026fb0;
+  padding: 30px 30px 30px 0;
+}
+.header .w .yws-logo {
+  width: 223px;
+  height: 100px;
+  position: relative;
+}
+.header .w .yws-logo::before {
+  position: absolute;
+  width: 1px;
+  height: 50px;
+  content: "";
+  background-color: #ccc;
+  top: 24px;
+  right: 0;
+}
+/*header end*/
+/*login start*/
+.login {
+  background-color: #eee;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  height: 421px;
+  padding: 27px;
+}
+.login .w {
+  background-color: #eee;
+}
+.login .w .login-banner {
+  background-color: orangered;
+  width: 650px;
+  height: 100%;
+  margin-left: 30px;
+}
+.login .w .login-log {
+  width: 310px;
+  height: 100%;
+  border: 1px solid #ddd;
+  border-top: 4px solid #026fb0;
+  background-color: #fff;
+  position: relative;
+}
+.login .w .login-log form {
+  padding: 20px;
+}
+.login .w .login-log form p {
+  font: normal 700 16px/20px "Microsoft Yahei";
+}
+.login .w .login-log form > div {
+  border: 1px solid #ddd;
+  background-color: #fff;
+  height: 50px;
+  margin-top: 20px;
+}
+.login .w .login-log form > div > i {
+  display: inline-block;
+  width: 50px;
+  height: 100%;
+  border-right: 1px solid #ddd;
+  font-size: 24px;
+  line-height: 50px;
+  text-align: center;
+  float: left;
+}
+.login .w .login-log form > div input {
+  margin-left: 10px;
+  line-height: 50px;
+  color: #aaa;
+  float: left;
+}
+.login .w .login-log form #username {
+  margin-top: 30px;
+  position: relative;
+}
+.login .w .login-log form #username .login-alert {
+  display: none;
+  position: absolute;
+  width: 270px;
+  height: 20px;
+  text-align: center;
+  background-color: #ffcccc;
+  color: red;
+  top: -25px;
+  left: -1px;
+}
+.login .w .login-log form #username i {
+  font-size: 30px;
+}
+.login .w .login-log form #login-checkbox {
+  border: none;
+  height: 20px;
+}
+.login .w .login-log form #login-checkbox input {
+  margin-right: 5px;
+  vertical-align: middle;
+}
+.login .w .login-log form #login-checkbox > a {
+  float: right;
+}
+.login .w .login-log form > input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 42px;
+  width: 100%;
+  font: normal 700 16px/42px "Microsoft Yahei";
+  color: #fff;
+  display: block;
+  text-align: center;
+  background-color: #9d9d9d;
+}
+.login .w .login-log form #zhuce {
+  background-color: #f9f9f9;
+  border-top: 1px solid #ddd;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: -1px;
+}
+.login .w .login-log form #zhuce > a {
+  padding: 2px 15px;
+  border-right: 1px solid #ddd;
+  font: normal 400 15px/50px "Microsoft Yahei";
+}
+.login .w .login-log form #zhuce > a i {
+  font-size: 22px;
+}
+.login .w .login-log form #zhuce .icon-weixin {
+  color: #65bc54;
+}
+.login .w .login-log form #zhuce .icon-qq {
+  color: #55b1e2;
+}
+.login .w .login-log form #zhuce .icon-unie61d {
+  color: #eb776a;
+}
+.login .w .login-log form #zhuce > a.border-none {
+  border-right: none ;
+}
+.login .w .login-log form #zhuce p {
+  font-weight: 400;
+  width: 90px;
+}
+.login .w .login-log form #zhuce p a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  color: black;
+  font: normal 400 15px/50px "Microsoft Yahei";
+}
+.login .w .login-log form #zhuce p a i {
+  font: normal 400 15px/50px "Microsoft Yahei";
+  border: none;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.login .w .login-log form #checking .yanzhengma {
+  width: 62px;
+  height: 30px;
+  margin: 8px 15px 10px 0;
+  background-color: gold;
+}
+/*login end*/

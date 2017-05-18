@@ -3,17 +3,30 @@
  */
 $(function () {
     var flag = false;
+    var uname='';
+    var psw='';
+    var checking='';
+    var captcha ='';
+    $('#username,#psw,#checking').bind('keyup focus blur',function(){
+         uname=$("#username").find("input").val();
+         psw=$("#psw").find("input").val();
+         captcha =$("#checking").find("input").val();
+        if(!uname||!psw || !captcha){
+            flag = false;
+        }else{
+            flag=true;
+            $("#submit").css('background-color','green');
+        }
+    });
+
     $("#submit").click(function () {
 
         /*console.log($("#info").val());
         console.log($("#username").find("input").val());
         console.log($("#psw").find("input").val());
         console.log($("#login-checkbox").find("input").val());*/
-        var uname=$("#username").find("input").val();
-        var psw=$("#psw").find("input").val();
-        var checking=$("#login-checkbox").find("input").val();
-        var captcha =$("#checking").find("input").val();
-        if(!uname||!psw){
+
+        if(!uname||!psw || !captcha){
             flag = false;
         }else{
             flag = true;
@@ -47,6 +60,7 @@ $(function () {
             //var data = {'data':$('#info').serialize()};
             //var url = {{url('login')}};
             //console.log(data);
+
             $.ajax({
                 url:'login',
                 type:'post',
@@ -63,7 +77,8 @@ $(function () {
                     }else if(data.status==200){
                         $("#username,#psw").css("border-color",'#ddd');
                         $("#username>.login-alert").css("display","none").html('');
-                        alert(data.msg);
+                        //alert(data.msg);
+                        location.href = './';
                     }
                 },
                 error:function(msg,data){

@@ -14,5 +14,14 @@ $(function () {
             $("#nav-ul>li").children("a").removeClass("hover");
         }
         $("#nav-ul>li:eq(0)").children("a").addClass("hover");
-    })
+    });
+
+    //退出
+    $('#ywslogout').click(function(){
+        //alert('111');
+        $.get('ywslogout',function(data){
+
+            location.reload();
+        });
+    });
 })

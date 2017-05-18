@@ -79,7 +79,7 @@ $(function () {
         if(uname.match(/((?=.*[a-z])|(?=.*\d)|(?=.*[#@!~%^&*]))[a-z\d#@!~%^&*]{4,20}/i)){
             $.ajax({
                 type:'post',
-                url:'/register',
+                url:'register',
                 data:{'username':uname,'_token':_token},
                 dataType:'json',
                 success:function(data){
@@ -148,7 +148,7 @@ $(function () {
             //请求ajax判断手机号是否已经存在
             $.ajax({
                 type:'post',
-                url:'/register',
+                url:'register',
                 data:{'phone':sMobile,'_token':_token},
                 dataType:'json',
                 success:function(data){
@@ -186,8 +186,8 @@ $(function () {
 // 验证图片验证码
     $('#ucon').bind('blur keyup',function(){
         var pcode = $('#ucon').val();
-        if(pcode.match(/\w{4}/)){
-            $.post('/pcode',{'pcode':pcode,'_token':_token},function(data){
+        if(pcode.match(/^\w{4}$/)){
+            $.post('pcode',{'pcode':pcode,'_token':_token},function(data){
                 if(data.status == 200){
                     $('#pcode-success').css('display','block');
                     $('#authCode').css('border-color','#ddd');
@@ -248,7 +248,7 @@ $(function () {
             num --;
         }, 1000);
         $.ajax({
-            url:'/sendCode',
+            url:'sendCode',
             dataType:'json',
             type:'get',
             data:{'phone':phone_val},
@@ -280,12 +280,12 @@ $(function () {
         var code=$('#umoc').val();
         var phone=$('#unum').val();
         console.log(flag_phone);
-        if(code.match(/\d{4}/) ){
+        if(code.match(/^\d{4}$/) ){
             if(flag_phone){
                 $('#mobAuth').css('border-color','#ddd');
                 $('#getcode-filed').css('display','none');
                 $.ajax({
-                    url:'/checkPhoneCode',
+                    url:'checkPhoneCode',
                     dataType:'json',
                     type:'get',
                     data:{code:code,phone:phone},

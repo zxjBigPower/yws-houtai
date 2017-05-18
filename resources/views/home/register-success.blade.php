@@ -2,16 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    {{--<meta http-equiv="Refresh" content="3; url={{url('/')}}"/>--}}
     <title>注册提示页</title>
-    <link rel="icon" href="yws.ico">
-    <link rel="stylesheet" href="font/iconfont.css">
-    <link rel="stylesheet" href="css/public.css">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/register-success.css">
-    <script src="lib/js/jquery.min.js"></script>
-    <script src="js/register-success.js"></script>
+    <link rel="icon" href="{{url('home/yws.ico')}}">
+    <link rel="stylesheet" href="{{url('home/font/iconfont.css')}}">
+    <link rel="stylesheet" href="{{url('home/css/public.css')}}">
+    <link rel="stylesheet" href="{{url('home/css/common.css')}}">
+    <link rel="stylesheet" href="{{url('home/css/register-success.css')}}">
+    <script src="{{asset('home/lib/js/jquery.min.js')}}"></script>
+    <script src="{{asset('home/js/register-success.js')}}"></script>
     <!--[if IE]>
-    <script src="lib/js/html5shiv.min.js"></script>
+    <script src="{{asset('home/lib/js/html5shiv.min.js')}}"></script>
     <![endif]-->
 </head>
 <body>
@@ -20,7 +21,7 @@
     <div class="w">
         <div class="yws-logo fl">
             <div class="yws-logo-line"></div>
-            <a href="index.html"><img src="img/logo.png" alt="" height="80px"></a>
+            <a href="index.html"><img src="{{asset('home/img/logo.png')}}" alt="" height="80px"></a>
         </div>
         <p class="fl">欢迎注册</p>
     </div>
@@ -30,9 +31,9 @@
 <div class="success">
     <div class="w">
         <div class="success-box">
-            <img src="img/u587.png" alt="">
-            <p>恭喜您， <span id="uuname">iii</span>已注册成功</p>
-            <a href="index.html">返回商城首页</a> <a href="#" class="jrhyzx">进入会员中心</a>
+            <img src="{{asset('home/img/u587.png')}}" alt="">
+            <p>恭喜您， <span id="uuname">{{$username}}</span>已注册成功</p>
+            <a href="{{url('/')}}">返回商城首页</a> <a href="#" class="jrhyzx">进入会员中心</a>
         </div>
     </div>
 </div>
@@ -85,7 +86,7 @@
             </ul>
         </div>
         <div class="footer-box-r fr clearfix">
-            <img src="img/login/erweima.jpg" alt="">
+            <img src="{{asset('home/img/login/erweima.jpg')}}" alt="">
             <p>微信公众号</p>
         </div>
         <p>Copyright © 2017   湖北云温商互联网商务有限公司  备案号：鄂ICP备15007060号</p>
