@@ -1,21 +1,4 @@
-@extends('admin.master')
-@section('header')
-    @include('admin.header')
-@endsection
-@section('css')
 
-    <style>
-        #pagebox{
-            display: inline-block;
-        }
-    </style>
-
-@endsection
-@section('menu')
-    @include('admin.menu')
-@endsection
-@section('content')
-    <section class="Hui-article-box">
         {{--面包屑--}}
         <nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页
             <span class="c-gray en">&gt;</span>
@@ -82,13 +65,13 @@
                 </div>
             </article>
         </div>
-    </section>
-@endsection
-@section('js')
+
+
+
     <script type="text/javascript" src="{{asset('admin/lib/My97DatePicker/4.8/WdatePicker.js')}}"></script>
     <script type="text/javascript" src="{{asset('admin/lib/datatables/1.10.0/jquery.dataTables.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('admin/lib/laypage/1.2/laypage.js')}}"></script>
-    <script>
+{{--    <script>
         /*用户下线*/
         function blog_stop(obj,id){
             layer.confirm('确认要禁止此用户登录吗？',function(index){
@@ -171,6 +154,6 @@
 
             });
         }
-    </script>
-@endsection
+    </script>--}}
+
 <!--/请在上方写此页面业务相关的脚本-->

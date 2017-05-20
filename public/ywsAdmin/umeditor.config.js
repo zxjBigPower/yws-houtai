@@ -27,8 +27,8 @@ etpl.config({
 
         function PathStack() {
 
-            this.documentURL = self.document.URL || self.location.href;
-
+             this.documentURL = self.document.URL || self.location.href;
+            //this.documentURL ='/umeditor1.2.3-utf8-php/';
             this.separator = '/';
             this.separatorPattern = /\\|\//g;
             this.currentDir = './';
@@ -153,6 +153,13 @@ etpl.config({
             'link unlink | emotion image | map',
             '| horizontal print preview fullscreen', 'drafts', 'formula'
         ]
+        /*,toolbar:[
+            'source | undo redo | bold italic underline strikethrough | superscript subscript | forecolor backcolor | removeformat |',
+            'insertorderedlist insertunorderedlist | selectall cleardoc paragraph | fontfamily fontsize' ,
+            '| justifyleft justifycenter justifyright justifyjustify |',
+            'link unlink |',
+            '| horizontal print preview'
+        ]*/
 
         //语言配置项,默认是zh-cn。有需要的话也可以使用如下这样的方式来自动多语言切换，当然，前提条件是lang文件夹下存在对应的语言文件：
         //lang值也可以通过自动获取 (navigator.language||navigator.browserLanguage ||navigator.userLanguage).toLowerCase()
@@ -192,7 +199,7 @@ etpl.config({
 
         //,readonly : false //编辑器初始化结束后,编辑区域是否是只读的，默认是false
 
-        //,zIndex : 900     //编辑器层级的基数,默认是900
+        //,zIndex : 9999999999999999999    //编辑器层级的基数,默认是900
 
         //如果自定义，最好给p标签如下的行高，要不输入中文时，会有跳动感
         //注意这里添加的样式，最好放在.edui-editor-body .edui-body-container这两个的下边，防止跟页面上css冲突

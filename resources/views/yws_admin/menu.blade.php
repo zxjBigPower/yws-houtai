@@ -44,4 +44,4 @@ foreach ($perm as $val){
     </div>
 </aside>
 {{--菜单开启--}}
-<div class="dislpayArrow hidden-xs"><a class="pngfix open" href="javascript:void(0);" id="leftmenue" onClick="displaynavbar(this)"></a></div>
+<div class="dislpayArrow hidden-xs"><a class="pngfix open" style="display: none;" href="javascript:void(0);" id="leftmenue" onClick="displaynavbar(this)"></a></div>

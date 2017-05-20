@@ -23,7 +23,6 @@
     <link rel="stylesheet" type="text/css" href="{{asset('yws_admin/static/h-ui.admin/css/style.css')}}" />
     <link href="{{asset('yws_admin/static/h-ui.admin/css/H-ui.login.css')}}" rel="stylesheet" type="text/css" />
     <!--[if IE 6]-->
-    <link href="{{ asset('umeditor1.2.3-utf8-php/themes/default/css/umeditor.css') }}" type="text/css" rel="stylesheet">
 
     <!--===================================================-->
     <script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js" ></script>
@@ -50,10 +49,7 @@
 
 <!--_footer 作为公共模版分离出去-->
 
-<script type="text/javascript" src="{{ asset('umeditor1.2.3-utf8-php/third-party/template.min.js') }}"></script>
-<script type="text/javascript" charset="utf-8" src="{{ asset('umeditor1.2.3-utf8-php/umeditor.config.js') }}"></script>
-<script type="text/javascript" charset="utf-8" src="{{ asset('umeditor1.2.3-utf8-php/umeditor.min.js') }}"></script>
-<script type="text/javascript" src="{{ asset('umeditor1.2.3-utf8-php/lang/zh-cn/zh-cn.js') }}"></script>
+
 {{--=================================--}}
 <script type="text/javascript" src="{{asset('yws_admin/lib/layer/2.4/layer.js')}}"></script>
 <script type="text/javascript" src="{{asset('yws_admin/static/h-ui/js/H-ui.js')}}"></script>
@@ -80,6 +76,8 @@
 
     function showChild(obj,id)
     {
+        $('#leftmenue').css('display','block');
+
         if(id !== false){
             var url = $(obj).attr('name');
             var param = "param="+"left"+parseInt(500*Math.random());
@@ -96,6 +94,7 @@
             chengeLinkLoad(url,param);
         }
     }
+
 </script>
 <!--/请在上方写此页面业务相关的脚本-->
 

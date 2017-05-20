@@ -59,5 +59,10 @@ Route::group(['namespace'=>'Admin','prefix'=>'ywsAdmin'],function(){
     Route::post('article','ywsArticleController@articleList')->name('article');
     //添加文章
     Route::post('article/add','ywsArticleController@articleAdd')->name('articleAdd');
+    //执行添加
+    Route::post('article/doadd','ywsArticleController@doArticleAdd')->name('articleAdd');
+
+    //添加新闻分类
+    Route::post('fenlei/doadd','ywsArticleController@doFenleiAdd');
 
 });

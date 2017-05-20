@@ -253,7 +253,7 @@ $(function () {
             type:'get',
             data:{'phone':phone_val},
             success:function (data) {
-                console.log(data);
+                //console.log(data);
                 if (data.status == 200) {
                     alert('发送成功');
                     send_code = true;
