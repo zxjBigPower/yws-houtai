@@ -146,7 +146,6 @@
 .yws-con .w .con-l .con-jrtt ul,
 .yws-con .w .con-l .con-ppxw ul {
   width: 870px;
-  position: absolute;
   background-color: #fff;
   transition: transform 1s;
   transform: rotateY(0deg);

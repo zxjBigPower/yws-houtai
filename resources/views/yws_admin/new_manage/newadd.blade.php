@@ -23,10 +23,9 @@
                     <div class="row cl">
                         <span class="c-red">*</span>所属分类：
                         <select name="fenlei" id="fenlei">
-                            <option >头条1</option>
-                            <option >头条2</option>
-                            <option >头条3</option>
-                            <option >头条4</option>
+                            @foreach($types as $type)
+                                <option >{{$type->type}}</option>
+                            @endforeach
                         </select>
                         <div style="color: orangered;margin: 0 auto;text-align: center" id="newadd_name"></div>
                         <button class="btn btn-primary radius" id="addfenlei">添加分类</button>
@@ -59,32 +58,29 @@
             //添加分类
             $('#addfenlei').click(function(){
                 //弹出一个输入框，输入一段文字，可以提交
-
                 var name = prompt("请输入您分类名称", ""); //将输入的内容赋给变量 name ，
 
-                //这里需要注意的是，prompt有两个参数，前面是提示的话，后面是当对话框出来后，在对话框里的默认值
-                if (name)//如果返回的有内容
-                {
-
-                    /*$.ajax({
-                        url:"{{url('fenlei/doadd')}}",
+                if (name) {
+                    $.ajax({
+                        url:"{{url('ywsAdmin/fenlei/doadd')}}",
                         dataType:'json',
                         data:{'fenlei':name},
                         success:function(data){
                             if(data.status==200){
+                                alert(data.msg);
                                 //$('#fenlei').append("<option>"+name+"<option>");
                                 var obj=document.getElementById('fenlei');
-                                obj.options.add(new Option("text")); //这个兼容IE与firefox
+                                obj.options.add(new Option(name)); //这个兼容IE与firefox
+                            }else{
+                                console.log('insert to faild');
                             }
                         },
                         error:function (msg) {
                             console.log(msg);
                         }
-                    });*/
+                    });
                 }
             });
-
-
 
             //        判断内容
             $('#newadd_sub').click(function(){

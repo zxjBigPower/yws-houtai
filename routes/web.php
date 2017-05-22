@@ -41,6 +41,9 @@ Route::group(['middleware' => ['web'],'namespace'=>'Home'], function () {
     //确认修改密码
     Route::post('changpass',"HomeController@changPass");
 
+    //新闻列表页面
+    Route::get('news',"ArtileController@newsList");
+
 });
 
 
@@ -60,9 +63,20 @@ Route::group(['namespace'=>'Admin','prefix'=>'ywsAdmin'],function(){
     //添加文章
     Route::post('article/add','ywsArticleController@articleAdd')->name('articleAdd');
     //执行添加
-    Route::post('article/doadd','ywsArticleController@doArticleAdd')->name('articleAdd');
-
-    //添加新闻分类
-    Route::post('fenlei/doadd','ywsArticleController@doFenleiAdd');
+    Route::post('article/doadd','ywsArticleController@doArticleAdd')->name('doArticleAdd');
+    //删除文章
+    Route::get('article/dodel','ywsArticleController@doArticleDel')->name('doArticleDel');
+    //审核文章
+    Route::get('article/docheck','ywsArticleController@doArticleCheck')->name('doArticleCheck');
+    //上下架
+    Route::get('article/doline','ywsArticleController@doArticleLine')->name('doArticleAdd');
+    //添加新闻分类fenlei
+    Route::get('fenlei/doadd','ywsArticleController@doFenleiAdd');
+    //排序分类
+    Route::get('fenlei/doorderly','ywsArticleController@doFenleiOrderly');
+    //分类列表
+    Route::post('fenlei','ywsArticleController@fenlei');
+    //删除分类
+    Route::get('fenlei/dodel','ywsArticleController@doFenleiDel');
 
 });

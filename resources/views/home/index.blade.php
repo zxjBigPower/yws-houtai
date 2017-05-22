@@ -66,7 +66,7 @@
             <li><a href="{{url('')}}#">爆款定制</a></li>
             <li><a href="{{url('')}}#">厂家直销</a></li>
             <li><a href="{{url('')}}yws-jmdl.html">加盟代理</a></li>
-            <li><a href="{{url('')}}#">云温商头条</a></li>
+            <li><a href="{{url('news')}}">云温商头条</a></li>
             <li><a href="{{url('')}}#">云温商金融</a></li>
             <li><a href="{{url('')}}#">关于我们</a></li>
         </ul>

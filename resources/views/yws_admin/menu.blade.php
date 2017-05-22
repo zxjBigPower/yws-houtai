@@ -33,7 +33,7 @@ foreach ($perm as $val){
                 <ul>
                     <li class="1" style="width: 100%;display: none;"><a href="javascript:;" name=" {{url('ywsAdmin/article') }}" onclick="showChild(this,false);" title="">文章列表</a></li>
                     <li class="1" style="width: 100%;display: none;"><a href="javascript:;" name="{{url('ywsAdmin/article/add')}}" onclick="showChild(this,false);" title="">添加文章</a></li>
-                    <li class="1" style="width: 100%;display: none;"><a href="javascript:;" title="">分类管理</a></li>
+                    <li class="1" style="width: 100%;display: none;"><a href="javascript:;" name="{{url('ywsAdmin/fenlei')}}" onclick="showChild(this,false);" title="">分类管理</a></li>
                     <li class="1" style="width: 100%;display: none;"><a href="javascript:;" title="">关于我们</a></li>
                     <li class="2" style="width: 100%;display: none;"><a href="javascript:;" title="">会员列表</a></li>
                     <li class="2" style="width: 100%;display: none;"><a href="javascript:;" title="">会员列表</a></li>

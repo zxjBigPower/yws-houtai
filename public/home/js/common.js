@@ -1,0 +1,1 @@
+$(function(){$(".yws-wx").mouseenter(function(){$(this).find(".wx-alert").stop().fadeIn(500)}).mouseleave(function(){$(this).find(".wx-alert").stop().fadeOut(500)}),$(".yws-kf").mouseenter(function(){$(this).find(".kf-alert").stop().fadeIn(500)}).mouseleave(function(){$(this).find(".kf-alert").stop().fadeOut(500)})});
