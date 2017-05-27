@@ -61,7 +61,7 @@
     //执行load方法
     function chengeLinkLoad(linkload,data){
         // alert(linkload);
-
+//console.log(1);
         var  rdata=data+'&_token='+"{{csrf_token()}}";
         //console.log(rdata);
         $.post(linkload,rdata,function(result){
@@ -94,7 +94,20 @@
             chengeLinkLoad(url,param);
         }
     }
-
+    //头部的点击变色
+//console.log($("#nav-ul").children("li"));
+$("#nav-ul").children("li").on("click",function(){
+    //console.log($(this));
+    $(this).find("a").addClass("click");
+    $(this).siblings("li").find("a").removeClass("click")
+    //console.log(1);
+})
+//侧栏的点击变色
+console.log($("#sidebar-ul"));
+$("#sidebar-ul").children("li").on("click",function(){
+    $(this).find("a").addClass("click");
+    $(this).siblings("li").find("a").removeClass("click")
+})
 </script>
 <!--/请在上方写此页面业务相关的脚本-->
 

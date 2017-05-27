@@ -3,7 +3,6 @@
 <script type="text/javascript" charset="utf-8" src={{asset('ywsAdmin/umeditor.config.js')}}></script>
 <script type="text/javascript" charset="utf-8" src="{{ asset('/ywsAdmin/umeditor.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('/ywsAdmin/lang/zh-cn/zh-cn.js') }}"></script>
-
         {{--面包屑--}}
         <nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页
             <span class="c-gray en">&gt;</span>

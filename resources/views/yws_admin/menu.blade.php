@@ -30,7 +30,8 @@ foreach ($perm as $val){
                 @endif
             @endforeach--}}
             <dd style="display:block;">
-                <ul>
+                <ul id="sidebar-ul">
+                    <li class="1 yws-nrgl" style="width: 100%;display: none;">内容管理</li>
                     <li class="1" style="width: 100%;display: none;"><a href="javascript:;" name=" {{url('ywsAdmin/article') }}" onclick="showChild(this,false);" title="">文章列表</a></li>
                     <li class="1" style="width: 100%;display: none;"><a href="javascript:;" name="{{url('ywsAdmin/article/add')}}" onclick="showChild(this,false);" title="">添加文章</a></li>
                     <li class="1" style="width: 100%;display: none;"><a href="javascript:;" name="{{url('ywsAdmin/fenlei')}}" onclick="showChild(this,false);" title="">分类管理</a></li>
